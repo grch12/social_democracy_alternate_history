@@ -28,6 +28,10 @@ fetch(mods_url)
             td.style.border = '1px solid';
             td.style.padding = '0.5em';
             td.textContent = line_data[j];
+            if (td.textContent == "name") td.textContent = "名称";
+            if (td.textContent == "author") td.textContent = "作者";
+            if (td.textContent == "url") td.textContent = "网址";
+            if (td.textContent == "description") td.textContent = "简介";
 
             tr.appendChild(td);
         }
@@ -60,11 +64,11 @@ submit.onclick = function() {
 };
 !}
 
-Curated mods:
+精选模组:
 
 {!<div id="mods_list"></div>!}
 
-Enter a mod's URL:
+输入模组网址:
 
 {!<input type="text" size="25" id="mod_url" name="mod_url"/> <button id="submit">Submit</button>!}
 

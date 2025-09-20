@@ -125,110 +125,110 @@ if ((Q.welfare > 0 && Q.judicial_reform >= 2 && Q.womens_work >= 1 && Q.family_l
 
 @hitler_wins
 view-if: (chancellor == "Hitler" or president == "Hitler") and (total_defeat==1 or civil_war_seen == 0)
-title: Adolf Hitler is in undisputed control over Germany.
+title: 阿道夫·希特勒已毫无争议地掌控了德国。
 tags: endings
 go-to: eg_menu
 
-Adolf Hitler is in undisputed control over Germany. The SPD, along with all of the democratic forces, have failed.
+阿道夫·希特勒已毫无争议地掌控了德国。社民党与所有民主力量均已失败。
 
-[? if civil_war_seen == 1 : At the very least, we fought back. Perhaps our resistance will be celebrated in an impossible-to-forsee future. ?]
+[? if civil_war_seen == 1 : 至少，我们奋起反抗过。或许在遥不可及的未来，我们的抵抗终将被传颂。?]
 
 @war_against_hitler
 view-if: (chancellor == "Hitler" or president == "Hitler") and (long_war == 1)
-title: Adolf Hitler is in power, but we are fighting to stop him.
+title: 阿道夫·希特勒已掌权，但我们正在为阻止他而战。
 tags: endings
 go-to: eg_menu
 
-Adolf Hitler has taken power in Germany. However, we have rallied the democratic forces of the country against him, and are fighting back. The outcome of this war is uncertain.
+阿道夫·希特勒已在德国掌控了权力。然而，我们团结起了全国的民主力量来对抗他，并展开反击。这场战争的结果仍未可知。
 
 
 @no_hitler
 view-if: chancellor != "Hitler" and president != "Hitler" and president != "Göring" and chancellor_party != "NSDAP"
-title: Hitler does not yet control Germany...
+title: 希特勒还没有掌控德国…
 tags: endings
 go-to: eg_menu
 
-Hitler does not yet control Germany. [? if chancellor == "Papen" : However, Chancellor Papen's authoritarianism and far-right politics are paving the way for Hitler, or someone like him, to take power. ?] [? if chancellor == "Schleicher" : However, Chancellor Schleicher's authoritarianism and scheming is paving the way for Hitler, or someone like him, to take power. ?][? if resist_coup == 1 and republic_victory == 0 and long_war == 0 and coup_victory == 0 : Given our defeat in the Prussian coup, the far-right appears to be ascendant. ?][? if chancellor == "Brüning" : However, Chancellor Brüning's austerity policies and the continuation of the depression are paving the way for Hitler, or someone like him, to take power. ?]
+希特勒目前还没有掌控德国。 [? if chancellor == "Papen" : 然而，帕彭总理的威权主义和极右翼政策为希特勒或类似的人掌权铺平了道路。 ?] [? if chancellor == "Schleicher" : 然而，施莱谢尔总理的威权主义和狡诈诡计为希特勒或类似的人掌权铺平了道路。 ?][? if resist_coup == 1 and republic_victory == 0 and long_war == 0 and coup_victory == 0 : 由于我们在普鲁士政变中的失败，极右翼势力正日益壮大。 ?][? if chancellor == "Brüning" :  然而，布吕宁总理的紧缩政策和萧条的持续为希特勒或类似的人掌权铺平了道路。 ?]
 
-[? if hitler_deported == 1 : We have deported Hitler back to Austria. Hopefully he will never return. ?]
+[? if hitler_deported == 1 : 我们已将希特勒驱逐回奥地利。但愿他永远不要回来。 ?]
 
 @nsdap_win
 view-if: chancellor == "Goebbels" or president == "Göring"
-title: Despite the deportation of Hitler, the Nazis have still taken power...
+title: 尽管希特勒已被驱逐，纳粹还是夺取了权力…
 tags: endings
 go-to: eg_menu
 
-Despite the deportation of Hitler, the NSDAP has somehow still wormed its way into power. [? if long_war == 1 : We are fighting them for control of Germany. ?]
+尽管希特勒已被驱逐，纳粹党竟仍设法爬上了权力宝座。[? if long_war == 1 : 我们正在与其争夺德国的控制权。 ?]
 
 
 @civil_war_won
-title: We have won the civil war.
+title: 我们赢得了内战。
 view-if: republic_victory == 1
 tags: endings
 go-to: eg_menu
 
-We have won the civil war against the reactionary forces. Germany will be changed forever, but it is too early to know how.
+我们赢得了反对反动势力的内战。德国将永远改变，但现在要说如何改变还为时过早。
 
 @civil_war_lost
-title: We lost the civil war.
+title: 我们输掉了内战。
 view-if: total_defeat == 1
 tags: endings
 go-to: eg_menu
 
-We have lost the civil war. At least it was a quick coup, and ended before Germany could be plunged into total war.
+我们输掉了内战。至少政变来得快，在德国陷入全面战争之前就结束了。
 
 @long_war
-title: Germany is gripped by civil war.
+title: 德国正陷入一场内战。
 view-if: long_war == 1
 tags: endings
 go-to: eg_menu
 
-Germany is currently in the grip of a civil war, a brutal affair that has no obvious end. Thousands of lives have already been extinguished, and it is likely that the war will not stop until Germany's cities are reduced to ruins. 
+德国正深陷一场内战，这场残酷的战事似乎没有终结的迹象。成千上万的生命已然消逝，这场战争恐怕要持续到德国的城市化为废墟才会停歇。
 
-[? if is_favorable == 0 : The current conditions are not favorable for us. ?][? if west_relation >= 2: Our cause is popular in the West, but their sclerotic governments are reluctant to send us aid. ?][? if soviet_aid >= 1 : The Soviet Union has aided the Communists, but not the socialists and democrats, in an attempt to shape Germany's future government. ?][? if east_aid >= 1 : Poland and Czechoslovakia have sent some assistance against the fascists. ?]
+[? if is_favorable == 0 : 当前形势不利于我们。 ?][? if west_relation >= 2: 我们的事业在西方广受支持，但他们僵化的政府却不愿向我们提供援助。 ?][? if soviet_aid >= 1 : 苏联已向共产党而非民主派提供了援助，以图干预德国未来的政府。 ?][? if east_aid >= 1 : 波兰与捷克斯洛伐克已提供了一些援助以对抗法西斯分子。 ?]
 
 
 @braun_victorious
-title: Otto Braun victorious
+title: 奥托·布劳恩胜利
 view-if: president == "Braun"
 tags: endings
 go-to: eg_menu
 
-Otto Braun has been elected as President of Germany. He had never desired to be the most powerful man in Germany, but now he is.
+奥托·布劳恩当选德国总统。他从未想过要成为德国最有权势的人，却已然身居此位。
 
 @president_schumacher
-title: Kurt Schumacher victorious
+title: 库尔特·舒马赫胜利
 view-if: president == "Schumacher"
 tags: endings
 go-to: eg_menu
 
-Kurt Schumacher has been elected as President of Germany. As a young and ambitious SPD member, he will be shaping Germany for years to come.
+库尔特·舒马赫当选德国总统。作为一名年轻有为的社民党成员，他将在未来数年间领导德国。
 
 @president_juchacz
-title: Marie Juchacz is President
+title: 玛丽·尤哈奇当选总统
 view-if: president == "Juchacz"
 tags: endings
 go-to: eg_menu
 
-Marie Juchacz has been elected as President of Germany. She is the first woman to be elected as the head of state of any republic, and will contribute to shaping Germany for years to come.
+玛丽·尤哈奇当选德国总统。她是首位当选共和国国家元首的女性，未来数年将为塑造德国发展方向作出贡献。
 
 @president_einstein
-title: Albert Einstein is President
+title: 阿尔伯特·爱因斯坦当选总统
 view-if: president == "Einstein"
 tags: endings
 go-to: eg_menu
 
-Albert Einstein, possibly the most famous scientist in the world, has been elected as President of Germany. As a German Jew and a pacifist, he is the repudiation of everything the Nazis stood for, and a symbol of a new German Republic that has moved beyond its checkered past.
+阿尔伯特·爱因斯坦，可能是世界上最有名的科学家，现在当选了德国总统。作为一位德国犹太裔及和平主义者，他相当于对纳粹的一切主张的否定，并且象征着新生的德意志共和国已跨过了它成败参半的过往。
 
 
 
 @spd_victorious
-title: SPD still in government
+title: 社民党仍在执政
 view-if: spd_in_government == 1 and chancellor_party == "SPD" and total_defeat == 0 and long_war == 0
 tags: endings
 go-to: eg_menu
 
-The SPD is still in government, under Chancellor [+ chancellor +]. Given the circumstances, this is a substantial accomplishment.
+在[+ chancellor +]总理的领导下，社民党仍在执政。考虑到当前形势，这实属重大成就。
 
 @communist_victory
 title: Communist victory
