@@ -70,6 +70,6 @@ submit.onclick = function() {
 
 输入模组网址:
 
-{!<input type="text" size="25" id="mod_url" name="mod_url"/> <button id="submit">Submit</button>!}
+{!<input type="text" size="25" id="mod_url" name="mod_url"/> <button id="submit">确定</button>!}
 
-- @backSpecialScene: Back
+- @backSpecialScene: 返回

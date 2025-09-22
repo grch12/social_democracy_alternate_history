@@ -91,11 +91,11 @@ on-arrival: chancellor = "Brüning"; chancellor_party = "Z"; welfare -= 2;
 
 The vote succeeds, and our government has resigned. Chancellor Brüning has been appointed as the head of an acting government, consisting solely of the bourgeois parties. He immediately proceeds to cut welfare spending substantially.
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_year +]年[+ next_election_month : month +].
 
 @let_it_happen_braun
 on-arrival: spd_caretaker = 1
 
 The vote succeeds, and our government has resigned. Chancellor [+ chancellor +] remains as the head of a caretaker government, but no longer has the power to enact new policies.
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_year +]年[+ next_election_month : month +].

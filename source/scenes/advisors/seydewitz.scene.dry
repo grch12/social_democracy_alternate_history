@@ -43,4 +43,4 @@ on-arrival: advisor_action_timer = 6; next_election_time = time + 3 if next_elec
 
 We have grown tired of the burdens of toleration, and have called a vote of no confidence in the current minority government.
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_year +]年[+ next_election_month : month +].

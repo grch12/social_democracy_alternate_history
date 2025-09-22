@@ -11,7 +11,7 @@ face-image: img/Rothe_Wahlen_1903.jpg
 
 # the low priority means that this event is only seen after all other events are resolved for the month.
 
-= Elections, [+ month : month +] [+ year +]
+= Elections, [+ year +]年[+ month : month +]
 
 The Reichstag elections are to be held now.
 
@@ -32,7 +32,7 @@ Since we are currently ruling as part of an emergency government, we may use qua
 on-departure: next_election_year = next_election_year + 1; next_election_time = time + 12; pro_republic -= 10; dvp_relation -= 8; z_relation -= 8; ddp_relation -= 10; kpd_relation -= 8; coup_progress += 2; workers_spd -= 4; new_middle_spd -= 5; old_middle_spd -= 5; rural_spd -= 5; catholics_spd -= 5; unemployed_spd -= 5; coup_progress += 2 if nsdap_normalized >= 0.3; coup_progress += 2 if nsdap_normalized + dnvp_normalized >= 0.5; sa_strength += 100 if coup_progress >= 7; sh_strength += 100 if coup_progress >= 7
 achievement: ausnahmezustand
 
-Fine. President [+ president +] has taken the unprecedented step of canceling these elections. New elections are scheduled for [+ next_election_month : month +] [+ next_election_year +].
+Fine. President [+ president +] has taken the unprecedented step of canceling these elections. New elections are scheduled for [+ next_election_year +]年[+ next_election_month : month +].
 
 Let us hope this does not backfire.
 
@@ -434,7 +434,7 @@ The reactionary establishment is still very skeptical of the Nazis, so instead, 
 
 Schleicher's government is deeply unpopular among all parties of the Reichstag. Despite his support for a coalition with the NSDAP, the Nazis want power all to themselves, without Schleicher.
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_year +]年[+ next_election_month : month +].
 
 @far_right_braun
 on-arrival: coup_progress += 2
@@ -598,7 +598,7 @@ There is no path to a majority government. President Hindenburg is tired of the 
 
 Papen is immediately faced with a vote of no confidence, given his unpopularity. However the SPD votes, he is guaranteed to fall, due to the unanimous hatred against him from all other parties.
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_year +]年[+ next_election_month : month +].
 
 @no_majority_bruning_toleration
 on-arrival: no_majority_bruning_elections += 1
@@ -701,7 +701,7 @@ on-arrival: pro_republic -= 10; next_election_time = time+3; next_election_month
 
 After the elections, Papen is still deeply unpopular, without any hint of coalition support, and there is a vote of no confidence called against him almost immediately. No matter how we vote, the measure would pass. The Reichstag is dissolved once more.
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_year +]年[+ next_election_month : month +].
 
 
 @no_majority_papen_2
@@ -711,7 +711,7 @@ There is no path to a majority government. Hindenburg is displeased with Papen, 
 
 Schleicher's government is deeply unpopular among all parties of the Reichstag. Despite his support for a coalition with the NSDAP, the Nazis want power all to themselves, without Schleicher.
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_year +]年[+ next_election_month : month +].
 
 
 @no_majority_schleicher
@@ -907,7 +907,7 @@ if (Q.pro_republic < 38) {
 !}
 view-if: no_confidence_votes > 50
 
-The next elections are set for [+ next_election_month : month +] [+ next_election_year +].
+The next elections are set for [+ next_election_year +]年[+ next_election_month : month +].
 
 
 @no_confidence_win
@@ -1051,7 +1051,7 @@ if (Q.far_right_coalition >= 50) {
 }
 !}
 
-There is no path to a workable Reichstag majority or minority government. The next elections are set for [+ next_election_month : month +] [+ next_election_year +].
+There is no path to a workable Reichstag majority or minority government. The next elections are set for [+ next_election_year +]年[+ next_election_month : month +].
 
 The people's faith in democracy is shaken by this ordeal. Of course, the Nazis are exploiting the instability to claim that democracy is unworkable, and that Germany needs a strong leader.
 
@@ -1232,7 +1232,7 @@ go-to: right_coalition_2
 @new_elections_spd
 on-arrival: next_election_time = time+3; next_election_month = month + 3; next_election_year = year; next_election_year = year + 1 if next_election_month > 12; next_election_month = next_election_month - 12 if next_election_month > 12; new_middle_spd -= 5; old_middle_spd -= 5; workers_spd -= 3; catholics_spd -= 3; in_election = 1
 
-Since the remaining bourgeois and right-wing parties cannot form a tolerable governing agreement, new elections have been called for [+ next_election_month : month +] [+ next_election_year +]. The previous chancellor has resigned, and has been replaced by Heinrich Brüning, also of the Center Party, ruling as part of a presidential cabinet. 
+Since the remaining bourgeois and right-wing parties cannot form a tolerable governing agreement, new elections have been called for [+ next_election_year +]年[+ next_election_month : month +]. The previous chancellor has resigned, and has been replaced by Heinrich Brüning, also of the Center Party, ruling as part of a presidential cabinet. 
 
 We are seen as responsible for the failure to form a government, and many of our middle-class and even some working-class supporters have deserted the party.
 
