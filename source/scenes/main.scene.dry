@@ -26,7 +26,7 @@ on-arrival: {!
 if (Q.advisor_action_timer <= 0) {
     Q.pinnedCardsDescription = '顾问 - 可以执行行动。';
 } else {
-    Q.pinnedCardsDescription = ''顾问 - 下一次行动还需等待 ' + Q.advisor_action_timer + ' 个月。';
+    Q.pinnedCardsDescription = '顾问 - 下一次行动还需等待 ' + Q.advisor_action_timer + ' 个月。';
 }
 !}
 max-cards: 4

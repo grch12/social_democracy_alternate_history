@@ -10,9 +10,9 @@ go-to: start_menu_2
 
 @start_menu_2
 
-- @start: Start game
-- @election_simulation: Election simulation
-- @credits: Credits
+- @start: 开始游戏
+- @election_simulation: 选举模拟
+- @credits: 参考资料
 - @game_over.achievements
 
 
