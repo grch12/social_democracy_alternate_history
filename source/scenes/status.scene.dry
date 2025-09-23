@@ -18,16 +18,16 @@ if (Q.economic_growth) {
 
 [+ year +]年[+ month : month +]
 
-可用资源: [+ resources +]
+可用资源：[+ resources +]
 
 社民党立场：[? if spd_toleration : 容忍 ?][? if spd_in_government : 执政中 - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : 反对党 ?][? if spd_caretaker : 看守政府 ?]
-[? if in_weimar_coalition and spd_in_government: 魏玛联盟 ?][? if in_grand_coalition and spd_in_government: 大联盟 ?][? if in_popular_front and spd_in_government: 人民阵线 ?][? if in_left_front and spd_in_government: 人民阵线 ?][? if in_spd_majority and spd_in_government: 单独过半 ?][? if in_minority_government and spd_in_government: 少数派政府 ?][? if in_emergency_government and spd_in_government: 紧急政府 ?]
+[? if in_weimar_coalition and spd_in_government: 魏玛联盟 ?][? if in_grand_coalition and spd_in_government: 大联盟 ?][? if in_popular_front and spd_in_government: 人民阵线 ?][? if in_left_front and spd_in_government: 左翼阵线 ?][? if in_spd_majority and spd_in_government: 单独过半 ?][? if in_minority_government and spd_in_government: 少数派政府 ?][? if in_emergency_government and spd_in_government: 紧急政府 ?]
 
 [? if spd_in_government and not in_spd_majority and not in_left_front : 联盟异议：[+ coalition_dissent : coalition_dissent +] ?]
 
 [? if spd_in_government and (in_left_front or in_popular_front): KPD联盟异议：[+ kpd_coalition_dissent : coalition_dissent +] ?]
 
-党内异议：: [+ dissent_percent : dissent +]
+党内异议：[+ dissent_percent : dissent +]
 
 = 政府
 
@@ -35,7 +35,7 @@ if (Q.economic_growth) {
 
 总理：[+ chancellor +] ([+ chancellor_party +])
 
-国会组成:
+国会组成：
 
 # 1928: 30, 1930: 25, 1932: 22
 {!<span class="tooltip-text" title="德国社会民主党">SPD</span>!}: [+ spd_r +]%
@@ -90,15 +90,15 @@ Others: [+ other_r +]%
 
 = 社民党内部派系
 
-{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
+{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">左派</span>!}力量: [+ left_strength : strength +], 异议: [+ left_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">Center</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
+{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">中间派</span>!}力量: [+ center_strength : strength +], 异议: [+ center_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
+{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">劳工派</span>!}力量: [+ labor_strength : strength +], 异议: [+ labor_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
+{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">改革派</span>!}力量: [+ reformist_strength : strength +], 异议: [+ reformist_dissent : dissent +]
 
-[? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
+[? if neorevisionism > 0 : Neorevisionist力量: [+ neorevisionist_strength : strength +], 异议: [+ neorevisionist_dissent : dissent +] ?]
 
 
 @paramilitaries
@@ -117,7 +117,7 @@ if (Q.sa_strength) {
 }
 !}
 
-= Paramilitaries
+= 准军事组织
 
 {!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Reichsbanner</span>!} Strength: [+ rb_strength_2 +] thousand
 
@@ -135,7 +135,7 @@ Stahlhelm Militarization: [+ sh_militancy : militancy +]
 
 SA Militarization: [+ sa_militancy : militancy +]
 
-= Official military/paramilitaries
+= 官方军队/准军事组织
 
 Reichswehr: [+ reichswehr_strength +] thousand troops.
 

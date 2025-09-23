@@ -120,7 +120,7 @@ if ((Q.welfare > 0 && Q.judicial_reform >= 2 && Q.womens_work >= 1 && Q.family_l
 @eg_menu
 
 - #endings
-- @end_game: 游戏结束.
+- @end_game: 游戏结束
 
 
 @hitler_wins
