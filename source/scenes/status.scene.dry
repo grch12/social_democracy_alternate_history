@@ -119,21 +119,21 @@ if (Q.sa_strength) {
 
 = 准军事组织
 
-{!<span class="tooltip-text" title="黑红金国旗团是捍卫民主的群众组织，主要隶属于社民党。">国旗团</span>!} Strength: [+ rb_strength_2 +] thousand
+{!<span class="tooltip-text" title="黑红金国旗团是捍卫民主的群众组织，主要隶属于社民党。">国旗团</span>!}成员：[+ rb_strength_2 / 10 +]万
 
-Reichsbanner Militarization: [+ rb_militancy : militancy +]
+国旗团军事化程度：[+ rb_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The RFB (Rotfrontkämpferbund) is a communist group associated with the KPD.">RFB</span>!} Strength: [+ rfb_strength_2 +] thousand
+{!<span class="tooltip-text" title="“红色阵线战士同盟”是与KPD有关联的共产主义组织。">RFB</span>!}成员：[+ rfb_strength_2 / 10 +]万
 
-RFB Militarization: [+ rfb_militancy : militancy +]
+RFB军事化程度: [+ rfb_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The Stahlhelm is a right-wing organization of war veterans associated with the DNVP.">Stahlhelm</span>!} Strength: [+ sh_strength_2 +] thousand
+{!<span class="tooltip-text" title="“钢盔”是一个主要由退伍军人组成的右翼组织，与DNVP有联系。">Stahlhelm</span>!}成员：[+ sh_strength_2 / 10 +]万
 
-Stahlhelm Militarization: [+ sh_militancy : militancy +]
+Stahlhelm军事化程度: [+ sh_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The SA (Sturmabteilung) is the Nazi paramilitary.">SA</span>!} Strength: [+ sa_strength_2 +] thousand
+{!<span class="tooltip-text" title="SA（冲锋队）是纳粹的准军事组织。">SA</span>!}成员：[+ sa_strength_2 / 10 +]万
 
-SA Militarization: [+ sa_militancy : militancy +]
+SA军事化程度: [+ sa_militancy : militancy +]
 
 = 官方军队/准军事组织
 
