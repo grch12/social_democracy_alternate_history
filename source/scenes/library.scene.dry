@@ -15,9 +15,9 @@ go-to: menu
 - @demographics: 人口群体
 - @parties: 党派
 - @public_opinion: 公众观点（及预计选举结果）
-- @paramilitaries: Paramilitary groups
-- @factions: Internal factions
-- @figures: Figures and charts
+- @paramilitaries: 准军事组织
+- @factions: 内部派系
+- @figures: 数据图表
 - @backSpecialScene: 退出图书馆。
 
 @government
@@ -284,56 +284,56 @@ go-to: menu
 @factions
 go-to: neorevisionists if neorevisionism > 0; menu if neorevisionism <= 0
 
-**Internal factions of the SPD**
+**社民党内部派系**
 
-Overall dissent: [+ dissent_percent : dissent +]
+总体异议: [+ dissent_percent : dissent +]
 
-**Left**
+**左派**
 
-Many leftists are former members of the USPD (the left-wing, anti-war Independent Social Democratic Party), or are young radicals. Many are interested in closer cooperation with the KPD, and some support extraparliamentary action.
+许多左派是前USPD（左翼、反战的“独立社会民主党”）党员，或者年轻的激进派。他们大部分致力于与KPD更加紧密合作，有些支持超出议会斗争范围的行动。
 
-Strength: [+ left_strength : strength +]
+力量: [+ left_strength : strength +]
 
-Dissent: [+ left_dissent : dissent +]
+异议: [+ left_dissent : dissent +]
 
-**Centrists**
+**中间派**
 
-Centrists in the SPD are followers of the doctrine of orthodox Marxism as expounded by Karl Kautsky and later Rudolf Hilferding. They seek a middle course between reform and revolution, while defending the democratic state.
+社民党内的中间派是卡尔·考茨基及后来鲁道夫·希法亭所阐述的正统马克思主义学说的追随者。他们寻求在改革与革命之间走中间路线，同时捍卫民主国家。
 
-Strength: [+ center_strength : strength +]
+力量: [+ center_strength : strength +]
 
-Dissent: [+ center_dissent : dissent +]
+异议: [+ center_dissent : dissent +]
 
-**Labor**
+**劳工派**
 
-Many SPD members are also part of the ADGB, the federation of free trade unions. Their goal is economic reform and benefits for organized workers.
+许多社民党成员同时也是自由工会联合会ADGB的成员。他们的目标是推动经济改革，并为组织起来的工人争取福利。
 
-Strength: [+ labor_strength : strength +]
+力量: [+ labor_strength : strength +]
 
-Dissent: [+ labor_dissent : dissent +]
+异议: [+ labor_dissent : dissent +]
 
-**Reformists**
+**改革派**
 
-Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy against the far right and left. [? if spd_prussia : They are dominant in the state government of Prussia. ?]
+改革派是务实的执政者，致力于扩大福利国家体系，并捍卫民主制度免受极右翼和极左翼势力的侵蚀。[? if spd_prussia : 他们主导着普鲁士州政府。 ?]
 
-Strength: [+ reformist_strength : strength +]
+力量: [+ reformist_strength : strength +]
 
-Dissent: [+ reformist_dissent : dissent +]
+异议: [+ reformist_dissent : dissent +]
 
 @neorevisionists
 go-to: menu
 
-**Neorevisionists**
+**新修正主义者**
 
-Neorevisionists focus on defending the republic and expanding democracy, while also expanding the party's base beyond the working class to create a people's party. They support new propaganda methods and extraparliamentary action in defense of the republic.
+新修正主义者专注于保卫共和国以及增进民主同时将党的支持基础扩展到工人阶级之外，创建全民党。他们支持新的宣传方式，以及通过议会斗争以外的行动来保卫共和国。
 
-Strength: [+ neorevisionist_strength : strength +]
+力量: [+ neorevisionist_strength : strength +]
 
-Dissent: [+ neorevisionist_dissent : dissent +]
+异议: [+ neorevisionist_dissent : dissent +]
 
 
 @figures
-title: Figures and Charts
+title: 数据图表
 go-to: menu
 on-arrival: z_minus_bvp_r = z_r - 3;
 on-display: {!
@@ -367,8 +367,8 @@ data = data.concat([
     },
     {
         "id": "z",
-        "legend": "Center",
-        "name": "Center",
+        "legend": "Z",
+        "name": "Z",
         "seats": (Q.z_r - 3)*5,
     },
     {
@@ -385,8 +385,8 @@ data = data.concat([
     },
     {
         "id": "other",
-        "legend": "Other",
-        "name": "Other",
+        "legend": "其他",
+        "name": "其他",
         "seats": Q.other_r*5,
     },
     {
@@ -444,14 +444,14 @@ if (d3 && window) {
     var maxUnemployment = d3.max(Q.economic_records, d => d.unemployment);
     var lines_3 = d3.linegraph(true, true, ['inflation', 'unemployment'],
             {'inflation': '#0000FF', 'unemployment': '#FF0000'},
-            {'inflation': 'Inflation', 'unemployment': 'Unemployment'},
+            {'inflation': '通货膨胀率', 'unemployment': '失业率'},
             maxUnemployment + 5, minInflation - 5, 21);
     lines_3.width(width).height(300);
     d3.select("#economic_history").datum(Q.economic_records).call(lines_3);
 }
 !}
 
-= Reichstag composition
+= 国会组成
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
@@ -477,19 +477,19 @@ if (d3 && window) {
 {!<tr><td><div class="box" style='background-color:#954B00'> </div></td><td>!} NSDAP: {!</td><td>!} [+ nsdap_r +]% {!</td></tr>!}
 {!</table>!}
 
-= Election history
+= 选举记录
 
 [? if year = 1928 and month < 5 : No new elections yet. ?]
 
 {!<svg id="election_history" style="width: 500px; height: 400px;"> </svg>!}
 
-= Party support history
+= 政党支持率记录
 
 [? if historical_mode: Not available in historical mode. ?]
 
 {!<svg id="party_support_history" style="width: 500px; height: 400px;"> </svg>!}
 
-= Economic history
+= 经济记录
 
 {!<svg id="economic_history" style="width: 500px; height: 300px;"> </svg>!}
 # TODO: maybe add textual histories too? some accessibility stuff as well...

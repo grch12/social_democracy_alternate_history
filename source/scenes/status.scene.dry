@@ -61,7 +61,7 @@ if (Q.economic_growth) {
 
 = 经济
 
-通货胀膨率：[+ inflation_2 +]%
+通货膨胀率：[+ inflation_2 +]%
 
 [? if black_thursday_seen = 1 : 失业率：[+ unemployed_2 +]% ?]
 
@@ -90,15 +90,15 @@ if (Q.economic_growth) {
 
 = 社民党内部派系
 
-{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">左派</span>!}力量: [+ left_strength : strength +], 异议: [+ left_dissent : dissent +]
+{!<span class="tooltip-text" title="左派支持激进的、颠覆性的政策，以及与KPD合作。">左派</span>!}力量: [+ left_strength : strength +], 异议: [+ left_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">中间派</span>!}力量: [+ center_strength : strength +], 异议: [+ center_dissent : dissent +]
+{!<span class="tooltip-text" title="中间派是中间马克思主义的派别，介于改革与革命之间。">中间派</span>!}力量: [+ center_strength : strength +], 异议: [+ center_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">劳工派</span>!}力量: [+ labor_strength : strength +], 异议: [+ labor_dissent : dissent +]
+{!<span class="tooltip-text" title="劳工派的目标是经济改革以及为组织起来的工人争取福利。">劳工派</span>!}力量: [+ labor_strength : strength +], 异议: [+ labor_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">改革派</span>!}力量: [+ reformist_strength : strength +], 异议: [+ reformist_dissent : dissent +]
+{!<span class="tooltip-text" title="改革派是务实的执政者，致力于扩大福利国家体系，并捍卫民主制度。">改革派</span>!}力量: [+ reformist_strength : strength +], 异议: [+ reformist_dissent : dissent +]
 
-[? if neorevisionism > 0 : Neorevisionist力量: [+ neorevisionist_strength : strength +], 异议: [+ neorevisionist_dissent : dissent +] ?]
+[? if neorevisionism > 0 : 新修正主义力量: [+ neorevisionist_strength : strength +], 异议: [+ neorevisionist_dissent : dissent +] ?]
 
 
 @paramilitaries
