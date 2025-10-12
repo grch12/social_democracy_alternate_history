@@ -19,7 +19,7 @@ Friedrich Stampfer is the long-time editor-in-chief of Vorwärts, our party news
 title: Media
 subtitle: Manage our party's newspapers and media.
 choose-if: advisor_action_timer = 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 on-arrival: advisor_action_timer = 6; media_timer -= 6; last_advisor_action = 1
 go-to: media
 
@@ -28,7 +28,7 @@ go-to: media
 title: Editorial Line
 subtitle: We can change the editorial line of Vorwärts to support a particular faction.
 choose-if: advisor_action_timer = 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 on-arrival: advisor_action_timer = 6
 
 Which faction should we support?
@@ -68,7 +68,7 @@ Vorwärts prints editorials in support of neorevisionist ideas.
 @kpd_cooperation
 title: Cooperation with the KPD
 subtitle: Could we build closer ties with the KPD?
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 choose-if: advisor_action_timer = 0
 on-arrival: advisor_action_timer = 6; left_strength += 2; kpd_relation += 4*(1-dissent); reformist_dissent += 2
 

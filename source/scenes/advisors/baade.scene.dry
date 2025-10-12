@@ -1,13 +1,13 @@
-title: Fritz Baade
+title: 弗里茨·巴德
 is-pinned-card: true
 tags: advisor, reformist
 card-image: img/portraits/BaadeFritz.jpg
 view-if: baade_advisor = 1
 new-page: true 
 
-= Fritz Baade
+= 弗里茨·巴德
 
-Baade is one of the few agricultural experts in the SPD, and an unorthodox economist.
+巴德是社民党内鲜有的农业专家，也是一位非主流经济学家。
 
 - @agriculture
 - @rural_campaign
@@ -15,29 +15,29 @@ Baade is one of the few agricultural experts in the SPD, and an unorthodox econo
 - @root: Return to main
 
 @agriculture
-title: Agricultural Policy
-subtitle: Baade is the Minister of Agriculture.
+title: 农业政策
+subtitle: 巴德是农业部长。
 choose-if: advisor_action_timer <= 0 and spd_in_government and agriculture_minister_party == "SPD"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The SPD is not in government. ?][? if agriculture_minister_party != "SPD": The SPD does not have the Agriculture Ministry. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if not spd_in_government : 社民党并未执政。 ?][? if agriculture_minister_party != "SPD": 社民党并未掌握农业部。 ?]
 on-arrival: advisor_action_timer = 6; agricultural_policy_timer -= 6; last_advisor_action = 1
 go-to: agricultural_policy
 
 
 @rural_campaign
-title: Rural Campaign
-subtitle: Try to campaign among the rural populace.
+title: 农村竞选
+subtitle: 尝试在农村地区开展竞选活动。
 choose-if: advisor_action_timer == 0 and rural_policy > 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if rural_policy == 0 : We have not enacted any rural policies. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if rural_policy == 0 : 我们还没有制定过农业政策。 ?]
 on-arrival: advisor_action_timer = 6; rural_spd += 5*(1-dissent); peoples_party_support += 1
 
-We have increased our campaigning among farmers and the rural populace.
+我们增加了针对农民和农村地区的竞选活动。
 
 @depression
-title: Addressing the economic crisis
-subtitle: Formulate a plan to rescue us from the economic crisis.
+title: 应对经济危机
+subtitle: 制定一项计划，将我们从经济危机中拯救出来。
 choose-if: advisor_action_timer <= 0 and wtb_adopted = 0 and black_thursday_seen
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if black_thursday_seen == 0 : We are not currently in an economic crisis. ?][? if wtb_adopted > 0 : We have already adopted the WTB-Plan. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if black_thursday_seen == 0 : 我们现在并未处于经济危机中 ?][? if wtb_adopted > 0 : 我们已经采纳了WTB计划。 ?]
 on-arrival: advisor_action_timer = 6; wtb_support += 2; center_dissent += 10; labor_strength += 1
 
-The WTB-Plan, standing for its primary supporters Woytinsky, Tarnow, and Baade, has been adopted as the unions' plan for getting us out of the depression. Baade canvasses in favor of this plan throughout the party.
+WTB计划——其名称源于主要倡导者沃伊廷斯基、塔诺和巴德——已被采纳为工会摆脱经济萧条的方案。巴德正在全党范围内为该计划进行游说。
 

@@ -18,7 +18,7 @@ A Great War veteran and a neorevisionist leader, Kurt Schumacher argues for a st
 title: Emergency Fundraising
 subtitle: An emergency infusion of resources.
 choose-if: advisor_action_timer = 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 on-arrival: advisor_action_timer = 6; resources += dues
 #view-if: difficulty < 1
 
@@ -30,7 +30,7 @@ We have gained +[+ dues +] resources.
 title: Reichsbanner
 subtitle: Schumacher supports providing more resources to the Reichsbanner.
 choose-if: advisor_action_timer = 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 on-arrival: advisor_action_timer = 6; reichsbanner_timer -= 6; last_advisor_action = 1
 go-to: reichsbanner
 
@@ -38,7 +38,7 @@ go-to: reichsbanner
 title: Support the reformist economic plan
 subtitle: Call for a limited program of job creation without deficit spending.
 choose-if: advisor_action_timer = 0 and moderate_plan_adopted = 0 and black_thursday_seen = 1
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if moderate_economic_plan = 0 : We have already adopted the reformist economic plan. ?] [? if black_thursday_seen == 0 : We are not currently in an economic crisis. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?] [? if moderate_economic_plan = 0 : 我们已经采纳了改革派经济计划。 ?] [? if black_thursday_seen == 0 : 我们现在并未处于经济危机中 ?]
 on-arrival: advisor_action_timer = 6
 go-to: crisis_program.support_moderate
 

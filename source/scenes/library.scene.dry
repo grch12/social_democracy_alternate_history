@@ -92,9 +92,9 @@ NSDAP: [+ nsdap_r +]%
 社民党立场：[? if spd_toleration : 容忍 ?][? if spd_in_government : 执政中 - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : 反对党 ?][? if spd_caretaker : 看守政府 ?]
 [? if in_weimar_coalition and spd_in_government: 魏玛联盟 ?][? if in_grand_coalition and spd_in_government: 大联盟 ?][? if in_popular_front and spd_in_government: 人民阵线 ?][? if in_left_front and spd_in_government: 左翼阵线 ?][? if in_spd_majority and spd_in_government: 单独过半 ?][? if in_minority_government and spd_in_government: 少数派政府 ?][? if in_emergency_government and spd_in_government: 紧急政府 ?]
 
-[? if spd_in_government and not in_spd_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
+[? if spd_in_government and not in_spd_majority and not in_left_front : 联盟异议：[+ coalition_dissent : coalition_dissent +] ?]
 
-[? if spd_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
+[? if spd_in_government and (in_left_front or in_popular_front): KPD联盟异议：[+ kpd_coalition_dissent : coalition_dissent +] ?]
 
 @cabinet
 go-to: menu
@@ -227,7 +227,8 @@ go-to: menu
 
 当前关系：[+ kpd_relation : relationships +]
 
-[? if sapd_formed: SAPD - Sozialistische Arbeiterpartei Deutschlands (Socialist Worker's Party of Germany) - a party recently formed in a split from the SPD, the SAPD is essentially an agglomeration of various left-wing splinter groups between the SPD and KPD. ?]
+[? if sapd_formed: SAPD - Sozialistische Arbeiterpartei Deutschlands（德国社会主义工人党）— 该党近期从社民党分裂出来，本质上是由介于SPD与KPD之间的各类左翼分裂派系聚合而成。
+ ?]
 
 **NSDAP** - *Nationalsozialistische Deutsche Arbeiterpartei*（民族社会主义德意志工人党，或称纳粹）— 一个极右翼民族主义、反犹主义政党。在阿道夫·希特勒的领导下，他们于1923年企图发动政变，并因此遭禁，但后来被合法化。
 
@@ -306,7 +307,7 @@ go-to: neorevisionists if neorevisionism > 0; menu if neorevisionism <= 0
 
 **劳工派**
 
-许多社民党成员同时也是自由工会联合会ADGB的成员。他们的目标是推动经济改革，并为组织起来的工人争取福利。
+许多社民党成员同时也是自由工会联合会（ADGB）的成员。他们的目标是推动经济改革，并为组织起来的工人争取福利。
 
 力量: [+ labor_strength : strength +]
 
@@ -470,7 +471,7 @@ if (d3 && window) {
 
 {!<tr><td><div class="box" style='background-color:#D5AC27'> </div></td><td>!} DVP: {!</td><td>!} [+ dvp_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#a0a0a0'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_r +] % {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#a0a0a0'> </div></td><td>!} 其他政党: {!</td><td>!} [+ other_r +] % {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#3f7bc1'> </div></td><td>!} DNVP: {!</td><td>!} [+ dnvp_r +]% {!</td></tr>!}
 
@@ -479,13 +480,13 @@ if (d3 && window) {
 
 = 选举记录
 
-[? if year = 1928 and month < 5 : No new elections yet. ?]
+[? if year = 1928 and month < 5 : 还没有举行过新的选举。 ?]
 
 {!<svg id="election_history" style="width: 500px; height: 400px;"> </svg>!}
 
 = 政党支持率记录
 
-[? if historical_mode: Not available in historical mode. ?]
+[? if historical_mode: 在历史模式下不可用。 ?]
 
 {!<svg id="party_support_history" style="width: 500px; height: 400px;"> </svg>!}
 

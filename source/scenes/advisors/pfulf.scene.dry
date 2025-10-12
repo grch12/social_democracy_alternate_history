@@ -20,7 +20,7 @@ title: Build support for a People's Party
 subtitle: Can we expand our party beyond the industrial working class?
 view-if: peoples_party = 0
 choose-if: peoples_party_support <= 4 and advisor_action_timer = 0 and peoples_party = 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if peoples_party_support > 4: There is already substantial support for a People's Party. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if peoples_party_support > 4: There is already substantial support for a People's Party. ?]
 on-arrival: advisor_action_timer = 6; peoples_party_support += 1; reformist_strength += 5;
 
 We are building up support for the idea of a People's Party.
@@ -30,7 +30,7 @@ title: Building a People's Party
 subtitle: Can we expand our party beyond the industrial working class?
 view-if: peoples_party = 0
 choose-if: peoples_party_support >= 3 and advisor_action_timer = 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if peoples_party_support < 3: There is not enough support for this policy within the party. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if peoples_party_support < 3: There is not enough support for this policy within the party. ?]
 on-arrival: advisor_action_timer = 6;
 go-to: peoples_party
 
@@ -39,7 +39,7 @@ title: Campaigning as a People's Party
 subtitle: Campaigning with some of our previously nontraditional demographics.
 view-if: peoples_party = 1
 choose-if: advisor_action_timer = 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 on-arrival: advisor_action_timer = 6;
 go-to: peoples_party_campaigning
 
@@ -48,6 +48,6 @@ go-to: peoples_party_campaigning
 title: Women's rights
 subtitle: Enact policy with regards to women's rights.
 choose-if: advisor_action_timer = 0 and spd_in_government
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The SPD is not currently in government. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if not spd_in_government : The SPD is not currently in government. ?]
 on-arrival: advisor_action_timer = 6; womens_rights_timer -= 10; last_advisor_action = 1
 go-to: womens_rights

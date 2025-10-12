@@ -1,13 +1,13 @@
-title: Siegfried Aufhäuser
+title: 齐格弗里德·奥夫豪泽
 is-pinned-card: true
 tags: advisor, reformist
 card-image: img/portraits/AufhäuserSiegfried.jpg
 view-if: aufhauser_advisor = 1
 new-page: true 
 
-= Siegfried Aufhäuser
+= 齐格弗里德·奥夫豪泽
 
-Aufhäuser is a leader of the AfA-Bund, the federation of socialist white-collar trade unions.
+奥夫豪泽是AfA-Bund，社会主义蓝领工人工会联合会的领袖。
 
 - @white_collar
 - @union_unity
@@ -16,36 +16,36 @@ Aufhäuser is a leader of the AfA-Bund, the federation of socialist white-collar
 - @root: Return to main
 
 @white_collar
-title: Organizing white-collar workers
-subtitle: Improve our standing among the new middle class.
+title:  组织白领职员
+subtitle: 提升我们在新中产阶层中的地位。
 choose-if: advisor_action_timer <= 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?] 
 on-arrival: advisor_action_timer = 6; new_middle_spd += 6*(1-dissent);
 
-We have increased our organizing among white-collar workers.
+我们加强了白领职员的组织。
 
 @union_unity
-title: Union-party coordination
-subtitle: Reduce dissent among the unions.
+title: 工会与党的协调
+subtitle: 减少工会的异议。
 choose-if: advisor_action_timer <= 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 on-arrival: advisor_action_timer = 6; labor_dissent -= 10;
 
-We have reduced tensions with the Labor faction.
+我们减少了劳工派的异议。
 
 @crisis
-title: Addressing the economic crisis
-subtitle: Aufhäuser can help support a left-wing economic program.
+title: 应对经济危机
+subtitle: 奥夫豪泽可以帮助支持左翼经济计划。
 choose-if: advisor_action_timer <= 0 and nationalization_adopted == 0 and black_thursday_seen == 1 and nationalization_support <= 3
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if black_thursday_seen == 0 : We are not currently in an economic crisis. ?][? if nationalization_adopted > 0 : We have already adopted the Left plan. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if black_thursday_seen == 0 : 我们现在并未处于经济危机中 ?][? if nationalization_adopted > 0 : 我们已经采纳了左翼计划。 ?]
 on-arrival: advisor_action_timer = 6; 
 go-to: crisis_program.support_left 
 
 @moderate_economic_plan
-title: Support the reformist economic plan
-subtitle: Aufhäuser can also support a moderate economic plan.
+title: 支持改革派经济计划
+subtitle: 奥夫豪泽还可以支持温和的经济计划
 choose-if: advisor_action_timer = 0 and moderate_plan_adopted = 0 and black_thursday_seen = 1
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if moderate_economic_plan = 0 : We have already adopted the reformist economic plan. ?] [? if black_thursday_seen == 0 : We are not currently in an economic crisis. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?] [? if moderate_economic_plan = 0 : 我们已经采纳了改革派经济计划。 ?] [? if black_thursday_seen == 0 : 我们现在并未处于经济危机中 ?]
 on-arrival: advisor_action_timer = 6
 go-to: crisis_program.support_moderate
 
