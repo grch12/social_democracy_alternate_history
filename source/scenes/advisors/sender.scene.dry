@@ -13,7 +13,7 @@ Toni Sender is an organizer and writer who came from a bourgeois family, but was
 - @organizing_women
 - @against_toleration
 - @crisis
-- @root: Return to main
+- @root: 返回主页
 
 @left_unity
 title: Left-Center Unity
@@ -25,7 +25,7 @@ on-arrival: advisor_action_timer = 6; left_dissent -= 10; labor_dissent -= 5; ce
 We have reduced dissent among the party's factions.
 
 @organizing_women
-title: Organizing women
+title: 组织妇女
 subtitle: Sender's strategies are aimed at young working women.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]

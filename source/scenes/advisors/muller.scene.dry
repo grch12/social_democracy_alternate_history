@@ -13,7 +13,7 @@ Müller is a former [? if chancellor = "Müller": and current ?] Chancellor, and
 - @coalition
 - @toleration
 - @snap_election
-- @root: Return to main
+- @root: 返回主页
 
 @coalition
 title: 与联盟谈判
@@ -26,9 +26,9 @@ We have improved our relations with the Z, [+ ddp_name +], and DVP, and reduced 
 
 
 @toleration
-title: Defending Toleration
+title: 坚持容忍
 subtitle: Müller supports the toleration arrangement with the bourgeois parties.
-unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if not spd_toleration: The SPD is not in toleration. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if not spd_toleration: 社民党并未处于容忍中。 ?]
 choose-if: spd_in_government = 0 and spd_toleration = 1 and advisor_action_timer = 0
 on-arrival: advisor_action_timer = 6; left_dissent -= 8; neorevisionist_dissent -= 8; center_dissent -= 5;
 

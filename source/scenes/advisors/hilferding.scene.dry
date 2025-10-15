@@ -14,38 +14,38 @@ new-page: true
 - @toleration
 - @finance_ministry_
 - @economic_democracy_
-- @root: Return to main
+- @root: 返回主页
 
 @against_right_and_left
-title: Against Right and Left
-subtitle: As a Centrist, Hilferding seeks to steer a course between the party's factions.
+title: 反对左右两派
+subtitle: 作为中间派，希法亭试图在党内派系之间寻求一条中间路线。
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 choose-if: advisor_action_timer = 0
 on-arrival: advisor_action_timer = 5; advisor_action_time = time; center_strength += 10; left_strength -= 5; labor_strength -= 5; neorevisionist_strength -= 5; center_dissent -= 10
 
-We have reduced the strength of the dissident factions in the party.
+我们削弱了党内有异议的派别的力量。
 
 @toleration
-title: Defending Toleration
-subtitle: Hilferding supports cooperation with the bourgeois parties.
-unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if not spd_toleration: The SPD is not in toleration. ?]
+title: 坚持容忍
+subtitle: 希法亭支持与资产阶级政党合作。
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if not spd_toleration: 社民党并未处于容忍中。 ?]
 choose-if: spd_in_government = 0 and spd_toleration = 1 and advisor_action_timer = 0
 on-arrival: advisor_action_timer = 6; left_dissent -= 10; neorevisionist_dissent -= 8; center_dissent -= 5
 
-We have reduced dissent among the anti-toleration factions.
+我们减少了反对容忍的派别的力量。
 
 @finance_ministry_
-title: Fiscal Policy
-subtitle: As Finance Minister, Hilferding can enact tax policies.
-unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?] [? if spd_in_government = 0 : SPD not in government: ?] [? if finance_minister_party != "SPD" : The SPD does not control the finance ministry. ?]
+title: 财政政策
+subtitle: 身为财政部长，希法亭可以制定税收政策。
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?] [? if spd_in_government = 0 : 社民党并未执政。 ?] [? if finance_minister_party != "SPD" : The SPD does not control the finance ministry. ?]
 choose-if: advisor_action_timer == 0 and spd_in_government == 1 and finance_minister_party == "SPD"
 on-arrival: advisor_action_timer = 6; fiscal_policy_timer -= 6; last_advisor_action = 1
 go-to: fiscal_policy
 
 @economic_democracy_
-title: Economic Democracy
-subtitle: Enact policies to build a more democratic economy.
-unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?] [? if spd_in_government = 0 : SPD not in government: ?] [? if labor_minister_party != "SPD" or (finance_minister_party != "SPD" and economic_minister_party != "SPD") : We do not have the necessary government ministers. ?]
+title: 经济民主
+subtitle: 制定政策以建设更加民主的经济体制。
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?] [? if spd_in_government = 0 : 社民党并未执政。 ?] [? if labor_minister_party != "SPD" or (finance_minister_party != "SPD" and economic_minister_party != "SPD") : 我们没有控制所需要的政府部门。. ?]
 choose-if: advisor_action_timer == 0 and spd_in_government == 1 and (economic_minister_party == "SPD" or finance_minister_party == "SPD") and (labor_minister_party == "SPD")
 on-arrival: advisor_action_timer = 6; economic_democracy_timer -= 10; last_advisor_action = 1
 go-to: economic_democracy

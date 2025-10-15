@@ -12,7 +12,7 @@ Max Seydewitz is a former leader of the youth wing, current supporter of the lef
 - @class_struggle
 - @socialist_youth
 - @against_toleration
-- @root: Return to main
+- @root: 返回主页
 
 @class_struggle
 title: Rally for class struggle
@@ -27,7 +27,7 @@ Our message of class struggle appeals to the left wing of the working class, whi
 @socialist_youth
 title: Support the Socialist Youth
 subtitle: We must end our reputation as a party for old men by increasing funding to the youth organizations. -1 resources
-unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?] [? if resources <= 0 : Not enough resources. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?] [? if resources <= 0 : 没有足够的资源。 ?]
 choose-if: advisor_action_timer = 0 and resources > 0
 on-arrival: advisor_action_timer = 6; resources -= 1; left_strength += 5; left_dissent -= 3; rb_strength += 50; rb_militancy += 0.025; workers_spd += 2*(1-dissent); new_middle_spd += 1;
 

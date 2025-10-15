@@ -13,7 +13,7 @@ new-page: true
 - @union_unity
 - @crisis
 - @moderate_economic_plan
-- @root: Return to main
+- @root: 返回主页
 
 @white_collar
 title:  组织白领职员

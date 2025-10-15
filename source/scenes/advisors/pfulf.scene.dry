@@ -13,7 +13,7 @@ Pfülf is a former teacher from Bavaria who came from a conservative Catholic fa
 - @build_peoples_party
 - @campaigning_peoples_party
 - @womens_rights_
-- @root: Return to main
+- @root: 返回主页
 
 @support_peoples_party
 title: Build support for a People's Party
@@ -45,9 +45,9 @@ go-to: peoples_party_campaigning
 
 
 @womens_rights_
-title: Women's rights
-subtitle: Enact policy with regards to women's rights.
+title: 妇女权利
+subtitle: 制定有关妇女权利的政策。
 choose-if: advisor_action_timer = 0 and spd_in_government
-unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if not spd_in_government : The SPD is not currently in government. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if not spd_in_government : 社民党并未执政。 ?]
 on-arrival: advisor_action_timer = 6; womens_rights_timer -= 10; last_advisor_action = 1
 go-to: womens_rights

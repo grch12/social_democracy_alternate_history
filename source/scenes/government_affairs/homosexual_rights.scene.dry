@@ -1,4 +1,4 @@
-title: Homosexual Rights
+title: 同性恋权利
 new-page: true
 is-card: true
 card-image: img/hirschfeld.jpg
@@ -8,7 +8,7 @@ view-if: spd_in_government == 1 and (progressive_coalition >= 50) and chancellor
 on-arrival: homosexual_rights_timer += 11; month_actions += 1
 tags: govt_affairs, cabinet
 
-= Homosexual Rights
+= 同性恋权利
 
 There is a constellation of different groups that have grown up around divergences in gender and sexuality, including homosexuals, lesbians, transsexuals, transvestites, inverts, etc. Our party's policy is to support their right to live freely and free from persecution; Magnus Hirschfeld, the founder of the Institut für Sexualwissenschaft, is a member of our party and a major advocate for homosexual rights. 
 

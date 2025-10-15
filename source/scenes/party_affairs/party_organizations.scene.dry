@@ -22,7 +22,7 @@ In addition to being a political party, the SPD is a social world onto itself, w
 
 @newspapers
 choose-if: resources > 0
-unavailable-subtitle: Not enough resources.
+unavailable-subtitle: 没有足够的资源。
 subtitle: -1 resources
 on-arrival: resources -= 1; media_timer = 0;
 go-to: media
@@ -32,7 +32,7 @@ go-to: media
 
 @welfare
 choose-if: resources > 0
-unavailable-subtitle: Not enough resources.
+unavailable-subtitle: 没有足够的资源。
 subtitle: -1 resources
 on-arrival: resources -= 1; workers_aid += 1; unemployed_spd += 5*(1 - dissent);
 
@@ -40,7 +40,7 @@ We have increased funding to Workers' Welfare. [? if black_thursday_seen > 0 : I
 
 @culture
 choose-if: resources > 0
-unavailable-subtitle: Not enough resources.
+unavailable-subtitle: 没有足够的资源。
 subtitle: -1 resources
 on-arrival: resources -= 1; cultural_organizations += 1; left_dissent -= 6; center_dissent -= 6; labor_dissent -= 6; reformist_dissent -= 6; neorevisionist_dissent -= 6
 
@@ -50,7 +50,7 @@ It is not enough for the SPD to solely be a political party. The Worker Singer's
 
 @rb
 choose-if: resources > 0
-unavailable-subtitle: Not enough resources.
+unavailable-subtitle: 没有足够的资源。
 subtitle: -1 resources
 on-arrival: resources -= 1; rb_strength  += 100; rb_militancy += 0.01; reichsbanner_timer = 0; funded_reichsbanner += 1
 
@@ -58,7 +58,7 @@ We have increased recruiting to the Reichsbanner.
 
 @youth
 choose-if: resources > 0
-unavailable-subtitle: Not enough resources.
+unavailable-subtitle: 没有足够的资源。
 subtitle: -1 resources
 on-arrival: resources -= 1; rb_strength += 50; rb_militancy += 0.02; young_socialists += 1; left_strength += 5; neorevisionist_strength += 5; radicalization += 1;
 

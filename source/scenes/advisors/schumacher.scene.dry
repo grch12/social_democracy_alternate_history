@@ -12,11 +12,11 @@ A Great War veteran and a neorevisionist leader, Kurt Schumacher argues for a st
 - @emergency_fundraising
 - @build_reichsbanner
 - @moderate_economic_plan
-- @root: Return to main
+- @root: 返回主页
 
 @emergency_fundraising
-title: Emergency Fundraising
-subtitle: An emergency infusion of resources.
+title: 紧急筹款
+subtitle: 紧急注入资源。
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 on-arrival: advisor_action_timer = 6; resources += dues
@@ -24,7 +24,7 @@ on-arrival: advisor_action_timer = 6; resources += dues
 
 # Schumacher's emergency fundraising is available on all difficulties.
 
-We have gained +[+ dues +] resources.
+我们获得了+[+ dues +]资源。
 
 @build_reichsbanner
 title: Reichsbanner

@@ -13,7 +13,7 @@ view-if: breitscheid_advisor = 1
 - @breitscheid_foreign
 - @party_discipline
 - @snap_election
-- @root: Return to main
+- @root: 返回主页
 
 @breitscheid_international
 title: 政党国际关系

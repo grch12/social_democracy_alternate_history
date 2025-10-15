@@ -7,12 +7,12 @@ new-page: true
 
 = 奥托·布劳恩
 
-布劳恩[? if spd_prussia = 1 : 是 ?][? if spd_prussia = 0 : 曾任 ?]德国最大的州普鲁士的州长。他是一位改革派领袖，致力于与资产阶级政党合作。
+布劳恩[? if spd_prussia = 1 : 是?][? if spd_prussia = 0 : 曾任?]德国最大的州普鲁士的州长。他是一位改革派领袖，致力于与资产阶级政党合作。
 
 - @coalition
 - @prussian_bulwark
 - @snap_election
-- @root: Return to main
+- @root: 返回主页
 
 @coalition
 title: 与联盟谈判

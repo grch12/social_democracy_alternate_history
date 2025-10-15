@@ -13,7 +13,7 @@ Wels is the long-time chairman of the SPD. He is a gifted organizer and a member
 - @party_discipline
 - @emergency_fundraising
 - @snap_election
-- @root: Return to main
+- @root: 返回主页
 
 @clear_agenda
 title: Clear the agenda
@@ -41,14 +41,14 @@ on-arrival: advisor_action_timer = 6; left_dissent -= 5; labor_dissent -= 10; ce
 我们已执行了党纪以减少党内所有派系的异议
 
 @emergency_fundraising
-title: Emergency Fundraising
+title: 紧急筹款
 view-if: difficulty < 1
-subtitle: An emergency infusion of resources.
+subtitle: 紧急注入资源。
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 on-arrival: advisor_action_timer = 6; resources += dues
 
-We have gained +[+ dues +] resources.
+我们获得了+[+ dues +]资源。
 
 @snap_election
 title: 提前选举

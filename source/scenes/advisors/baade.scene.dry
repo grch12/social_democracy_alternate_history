@@ -12,7 +12,7 @@ new-page: true
 - @agriculture
 - @rural_campaign
 - @depression
-- @root: Return to main
+- @root: 返回主页
 
 @agriculture
 title: 农业政策

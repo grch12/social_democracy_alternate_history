@@ -11,7 +11,7 @@ Major changes:
 - New advisors: Antonie Pfülf (reformist), Julius Leber (neorevisionist), Kurt Rosenfeld (left)
 - New events: All Quiet on the Western Front, Altona Clashes
 - New party affairs card: Building a People's Party
-- New government affairs cards: Homosexual Rights, Agricultural Policy (plus an Agriculture Minister position).
+- New government affairs cards: 同性恋权利, Agricultural Policy (plus an Agriculture Minister position).
 
 Minor changes:
 
@@ -21,7 +21,7 @@ Minor changes:
 - Added descriptions of the internal party factions.
 - Some more tax options.
 - Abortion rights and homosexual rights can be passed with a "progressive coalition" of the SPD, KPD, and DDP.
-- Can only use the Shuffle Cabinet and Women's Rights cards if the chancellor is SPD.
+- Can only use the Shuffle Cabinet and 妇女权利 cards if the chancellor is SPD.
 - Low relations with the DVP results in less leverage in a grand coalition.
 - Papen being appointed as chancellor reduces judicial reform.
 - Changed frequencies of some cards.
@@ -299,7 +299,7 @@ Major changes:
 - New government card - Constitutional reform (requires judicial ministry, at least a Weimar Coalition, and neorevisionism) - change vote threshold for Reichstag representation, requiring a constructive vote of no confidence, reducing presidential powers.
 - new category of advisors - non-factional. New advisors: Magnus Hirschfeld, Gustav Radbruch, Fritz Baade, Friedrich Stampfer.
 - New advisor: Max Seydewitz (left)
-- New advisor actions: Fiscal Policy (Hilferding). Now, all cabinet ministry actions should have a corresponding advisor action (Economic Ministry is Woytinsky's action).
+- New advisor actions: 财政政策 (Hilferding). Now, all cabinet ministry actions should have a corresponding advisor action (Economic Ministry is Woytinsky's action).
 - New event: Center Party Conference of December 1928 - if relations with the Center Party are strong enough, then it's possible to support Joseph Joos as party leader in place of Ludwig Kaas. This unlocks additional government options.
 - New government options: National Unity Government under Joseph Wirth (see previous) - this is basically a Constitutional Coalition.
 - New foreign ministry option - negotiate a Reichskonkordat with the Vatican.

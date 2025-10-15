@@ -37,7 +37,7 @@ Despite his known reactionary nature, Hindenburg has at least been keeping the N
 @support_braun
 subtitle: This will cost us 2 resources.
 choose-if: resources >= 2
-unavailable-subtitle: Not enough resources.
+unavailable-subtitle: 没有足够的资源。
 on-arrival: resources -= 2; braun_campaign = 1
 go-to: braun_campaign
 
