@@ -16,7 +16,7 @@ new-page: true
 - @root: 返回主页
 
 @white_collar
-title:  组织白领职员
+title: 组织白领职员
 subtitle: 提升我们在新中产阶层中的地位。
 choose-if: advisor_action_timer <= 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?] 

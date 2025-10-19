@@ -7,7 +7,7 @@ new-page: true
 
 = 尤利乌斯·莱贝尔
 
-莱贝尔 is a former army officer who turned against the military leaders of the Kapp Putsch in 1920, helping us put down the army's attempted coup. He is in favor of expanded democracy and building a broad popular base for the SPD.
+莱贝尔曾是一名军官，1920年他反对卡普政变的军方领导者，协助我们镇压了军方的政变企图。他主张扩大民主，为社民党建立广泛的群众基础。
 
 - @democratic_rally
 - @military_affairs
@@ -17,44 +17,44 @@ new-page: true
 - @root: 返回主页
 
 @democratic_rally
-title: Rally for democracy
-subtitle: Rally our party and the German people to defend democracy and freedom.
+title: 民主集会
+subtitle: 号召我们党和全德国人民团结起来捍卫民主和自由。
 choose-if: advisor_action_timer == 0 
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 on-arrival: advisor_action_timer = 6; pro_republic += 5; democratization += 1; neorevisionist_strength += 5; reformist_strength += 3; workers_spd += 4*(1-dissent) if democratization >= 4; new_middle_spd += 3*(1-dissent) if democratization >= 4
 
-Leber helps us to rally the people in defense of democracy.
+莱贝尔帮助我们组织了捍卫民主的群众集会。
 
 @military_affairs
-title: Military affairs
-subtitle: We can set our military policy.
+title: 军事事务
+subtitle: 我们可以设定军事政策。
 choose-if: advisor_action_timer == 0 and spd_in_government and reichswehr_minister_party == "SPD"
-unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if not spd_in_government : 社民党并未执政。 ?][? if reichswehr_minister_party != "SPD": The SPD does not have the Reichswehr ministry. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if not spd_in_government : 社民党并未执政。 ?][? if reichswehr_minister_party != "SPD": 社民党并未掌握国防部。 ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: military_policy
 
 @support_peoples_party
-title: Build support for a People's Party
-subtitle: Can we expand our party beyond the industrial working class?
+title: 增强对“全民党”理念的支持
+subtitle: 我们能否将党的支持基础扩展到工人阶级之外？
 view-if: peoples_party = 0
 choose-if: peoples_party_support <= 4 and advisor_action_timer = 0 and peoples_party == 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if peoples_party_support > 4: There is already substantial support for a People's Party. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if peoples_party_support > 4: “全民党”理念已经得到非常多支持了。 ?]
 on-arrival: advisor_action_timer = 6; peoples_party_support += 1
 
-We are building up support for the idea of a People's Party.
+我们正在增强对“全民党”理念的支持。
 
 @build_peoples_party
-title: Building a People's Party
-subtitle: Can we expand our party beyond the industrial working class?
+title: 建立全民党
+subtitle: 我们能否将党的支持基础扩展到工人阶级之外？
 view-if: peoples_party == 0
 choose-if: peoples_party_support >= 3 and advisor_action_timer = 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if peoples_party_support < 3: There is not enough support for this policy within the party. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if peoples_party_support < 3: 党内对该政策的支持还不够。 ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: peoples_party
 
 @campaigning_peoples_party
-title: Campaigning as a People's Party
-subtitle: Campaigning with some of our previously nontraditional demographics.
+title: 以全民党身份竞选
+subtitle: 面向一些以前很少涉足的群体开展竞选活动。
 view-if: peoples_party = 1
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]

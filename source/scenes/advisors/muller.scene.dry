@@ -1,14 +1,14 @@
-title: Hermann Müller
+title: 赫尔曼·米勒
 is-pinned-card: true 
 tags: advisor, centrist
 card-image: img/portraits/MüllerHermann.jpg
 new-page: true
 view-if: muller_advisor = 1
 
-= Herman Müller
+= 赫尔曼·米勒
 
 
-Müller is a former [? if chancellor = "Müller": and current ?] Chancellor, and is a long-time Social Democratic leader.
+米勒曾任总理[? if chancellor = "Müller": ，现在再度出任?]，同时也是社民党的资深领导人。
 
 - @coalition
 - @toleration
@@ -17,7 +17,7 @@ Müller is a former [? if chancellor = "Müller": and current ?] Chancellor, and
 
 @coalition
 title: 与联盟谈判
-subtitle: Müller can improve our relationships with our coalition partners.
+subtitle: 米勒可以改善我们与盟友的关系。
 choose-if: advisor_action_timer <= 0 and spd_in_government = 1
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if not spd_in_government: 社民党并未执政。 ?]
 on-arrival: advisor_action_timer = 6; coalition_dissent -= 1 if spd_in_government = 1 and coalition_dissent > 0; z_relation += 5; ddp_relation += 5; dvp_relation += 5

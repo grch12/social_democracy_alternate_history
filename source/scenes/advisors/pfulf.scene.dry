@@ -16,27 +16,27 @@ Pfülf is a former teacher from Bavaria who came from a conservative Catholic fa
 - @root: 返回主页
 
 @support_peoples_party
-title: Build support for a People's Party
-subtitle: Can we expand our party beyond the industrial working class?
+title: 增强对“全民党”理念的支持
+subtitle: 我们能否将党的支持基础扩展到工人阶级之外？
 view-if: peoples_party = 0
 choose-if: peoples_party_support <= 4 and advisor_action_timer = 0 and peoples_party = 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if peoples_party_support > 4: There is already substantial support for a People's Party. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if peoples_party_support > 4: “全民党”理念已经得到非常多支持了。 ?]
 on-arrival: advisor_action_timer = 6; peoples_party_support += 1; reformist_strength += 5;
 
-We are building up support for the idea of a People's Party.
+我们正在增强对“全民党”理念的支持。
 
 @build_peoples_party
-title: Building a People's Party
-subtitle: Can we expand our party beyond the industrial working class?
+title: 建立全民党
+subtitle: 我们能否将党的支持基础扩展到工人阶级之外？
 view-if: peoples_party = 0
 choose-if: peoples_party_support >= 3 and advisor_action_timer = 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if peoples_party_support < 3: There is not enough support for this policy within the party. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if peoples_party_support < 3: 党内对该政策的支持还不够。 ?]
 on-arrival: advisor_action_timer = 6;
 go-to: peoples_party
 
 @campaigning_peoples_party
-title: Campaigning as a People's Party
-subtitle: Campaigning with some of our previously nontraditional demographics.
+title: 以全民党身份竞选
+subtitle: 面向一些以前很少涉足的群体开展竞选活动。
 view-if: peoples_party = 1
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]

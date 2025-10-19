@@ -23,11 +23,11 @@ go-to: labor_rights
 
 
 @union_unity
-title: Union-party coordination
-subtitle: Reduce dissent among the unions.
+title: 工会与党的协调
+subtitle: 减少工会的异议。
 choose-if: advisor_action_timer <= 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 on-arrival: advisor_action_timer = 6; labor_dissent -= 5; labor_strength += 5
 
-We have reduced tensions with the Labor faction, and increased its strength in the party.
+我们减少了与劳工派的紧张关系，并增强了其在党内的力量。
 

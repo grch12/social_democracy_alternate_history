@@ -510,7 +510,7 @@ Theodor Leipart is now an advisor.
 
 @add_aufhauser
 title: Siegfried Aufhäuser
-subtitle: Siegfried Aufhäuser is the leader of the AfA-Bund, the white-collar trade union federation. {!<br><br>!}[? if difficulty < 0 : Actions - Organizing White-Collar Workers, Union-Party Coordination, 应对经济危机 ?]
+subtitle: Siegfried Aufhäuser is the leader of the AfA-Bund, the white-collar trade union federation. {!<br><br>!}[? if difficulty < 0 : Actions - Organizing White-Collar Workers, 工会与党的协调, 应对经济危机 ?]
 is-card: true
 card-image: img/portraits/AufhäuserSiegfried.jpg
 tags: labor_advisor
@@ -522,7 +522,7 @@ Siegfried Aufhäuser is now an advisor.
 
 @add_wissell
 title: Rudolf Wissell
-subtitle: Rudolf Wissell is an economist who has been the Labor Minister, and is an advocate for the interests of labor within the government. {!<br><br>!}[? if difficulty < 0 : Actions - Union-Party Coordination, Labor Rights ?]
+subtitle: Rudolf Wissell is an economist who has been the Labor Minister, and is an advocate for the interests of labor within the government. {!<br><br>!}[? if difficulty < 0 : Actions - 工会与党的协调, Labor Rights ?]
 is-card: true
 card-image: img/portraits/WissellRudolf.jpg
 tags: labor_advisor
@@ -574,7 +574,7 @@ Kurt Schumacher is now an advisor.
 
 @add_leber
 title: Julius Leber
-subtitle: Julius Leber is a former Reichswehr officer who resigned in opposition to the Kapp coup attempt. {!<br><br>!}[? if difficulty < 0 : Actions - Rally for Democracy, Military Affairs, Building a People's Party ?]
+subtitle: Julius Leber is a former Reichswehr officer who resigned in opposition to the Kapp coup attempt. {!<br><br>!}[? if difficulty < 0 : Actions - Rally for Democracy, Military Affairs, 建立全民党 ?]
 is-card: true
 card-image: img/portraits/LeberJulius.jpg
 view-if: leber_advisor = 0 and n_advisors < 3

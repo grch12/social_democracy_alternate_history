@@ -37,7 +37,7 @@ on-arrival: advisor_action_timer = 6; left_dissent -= 10; neorevisionist_dissent
 @finance_ministry_
 title: 财政政策
 subtitle: 身为财政部长，希法亭可以制定税收政策。
-unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?] [? if spd_in_government = 0 : 社民党并未执政。 ?] [? if finance_minister_party != "SPD" : The SPD does not control the finance ministry. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?] [? if spd_in_government = 0 : 社民党并未执政。 ?] [? if finance_minister_party != "SPD" : 社民党并未掌握财政部。 ?]
 choose-if: advisor_action_timer == 0 and spd_in_government == 1 and finance_minister_party == "SPD"
 on-arrival: advisor_action_timer = 6; fiscal_policy_timer -= 6; last_advisor_action = 1
 go-to: fiscal_policy

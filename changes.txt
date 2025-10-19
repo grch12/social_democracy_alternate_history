@@ -10,7 +10,7 @@ Major changes:
 
 - New advisors: Antonie Pfülf (reformist), Julius Leber (neorevisionist), Kurt Rosenfeld (left)
 - New events: All Quiet on the Western Front, Altona Clashes
-- New party affairs card: Building a People's Party
+- New party affairs card: 建立全民党
 - New government affairs cards: 同性恋权利, Agricultural Policy (plus an Agriculture Minister position).
 
 Minor changes:
