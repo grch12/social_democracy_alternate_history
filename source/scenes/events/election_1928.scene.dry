@@ -434,7 +434,7 @@ The reactionary establishment is still very skeptical of the Nazis, so instead, 
 
 Schleicher's government is deeply unpopular among all parties of the Reichstag. Despite his support for a coalition with the NSDAP, the Nazis want power all to themselves, without Schleicher.
 
-New elections have been set for [+ next_election_year +]年[+ next_election_month : month +].
+新的选举定于[+ next_election_year +]年[+ next_election_month : month +]举行。
 
 @far_right_braun
 on-arrival: coup_progress += 2
@@ -598,7 +598,7 @@ There is no path to a majority government. President Hindenburg is tired of the 
 
 Papen is immediately faced with a vote of no confidence, given his unpopularity. However the SPD votes, he is guaranteed to fall, due to the unanimous hatred against him from all other parties.
 
-New elections have been set for [+ next_election_year +]年[+ next_election_month : month +].
+新的选举定于[+ next_election_year +]年[+ next_election_month : month +]举行。
 
 @no_majority_bruning_toleration
 on-arrival: no_majority_bruning_elections += 1
@@ -701,7 +701,7 @@ on-arrival: pro_republic -= 10; next_election_time = time+3; next_election_month
 
 After the elections, Papen is still deeply unpopular, without any hint of coalition support, and there is a vote of no confidence called against him almost immediately. No matter how we vote, the measure would pass. The Reichstag is dissolved once more.
 
-New elections have been set for [+ next_election_year +]年[+ next_election_month : month +].
+新的选举定于[+ next_election_year +]年[+ next_election_month : month +]举行。
 
 
 @no_majority_papen_2
@@ -711,7 +711,7 @@ There is no path to a majority government. Hindenburg is displeased with Papen, 
 
 Schleicher's government is deeply unpopular among all parties of the Reichstag. Despite his support for a coalition with the NSDAP, the Nazis want power all to themselves, without Schleicher.
 
-New elections have been set for [+ next_election_year +]年[+ next_election_month : month +].
+新的选举定于[+ next_election_year +]年[+ next_election_month : month +]举行。
 
 
 @no_majority_schleicher

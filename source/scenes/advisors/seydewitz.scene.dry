@@ -1,13 +1,13 @@
-title: Max Seydewitz
+title: 马克斯·赛德维茨
 is-pinned-card: true
 tags: advisor, left
 card-image: img/portraits/SeydewitzMax.jpg
 view-if: seydewitz_advisor = 1
 new-page: true 
 
-= Max Seydewitz
+= 马克斯·赛德维茨
 
-Max Seydewitz is a former leader of the youth wing, current supporter of the left wing of the SPD, and advocates for class struggle.
+马克斯·赛德维茨是我们青年团的前领导人，现在是社民党左翼的支持者，倡导阶级斗争。
 
 - @class_struggle
 - @socialist_youth
@@ -15,8 +15,8 @@ Max Seydewitz is a former leader of the youth wing, current supporter of the lef
 - @root: 返回主页
 
 @class_struggle
-title: Rally for class struggle
-subtitle: The core of socialism should be the struggle of the proletariat against the bourgeoisie.
+title: 阶级斗争集会
+subtitle: 社会主义的核心应该是无产阶级对资产阶级的阶级斗争。
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 choose-if: advisor_action_timer = 0
 on-arrival: advisor_action_timer = 6; workers_spd += 4*(1-dissent); unemployed_spd += 3*(1-dissent); workers_spd += 4*(1-dissent) if nationalization_progress > 0; unemployed_spd += 3*(1-dissent) if nationalization_progress > 0; left_strength += 5; left_dissent -= 5; old_middle_spd -= 3; new_middle_spd -= 2
@@ -34,13 +34,13 @@ on-arrival: advisor_action_timer = 6; resources -= 1; left_strength += 5; left_d
 Seydewitz supports building up the Socialist Youth, which attracts support to the Left and increases the militancy of the Reichsbanner.
 
 @against_toleration
-title: Against toleration
-subtitle: Break our current toleration arrangement, and bring down the government via a no-confidence vote.
+title: 反对容忍
+subtitle: 结束我们当前的容忍协定，通过不信任投票推翻政府。
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?] [? if spd_toleration == 0 : The SPD is not currently in toleration. ?]
 view-if: not constructive_vonc
 choose-if: advisor_action_timer == 0 and spd_toleration
 on-arrival: advisor_action_timer = 6; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time + 3; next_election_year = year if next_election_time >= time + 3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; spd_toleration = 0; left_strength += 8; pro_republic -= 4; new_middle_spd -= 3; rural_spd -= 3; old_middle_spd -= 3; catholics_spd -= 3; reformist_dissent += 8
 
-We have grown tired of the burdens of toleration, and have called a vote of no confidence in the current minority government.
+我们已对容忍所带来的麻烦感到厌倦，并向现任少数派政府发起了不信任投票。
 
-New elections have been set for [+ next_election_year +]年[+ next_election_month : month +].
+新的选举定于[+ next_election_year +]年[+ next_election_month : month +]举行。

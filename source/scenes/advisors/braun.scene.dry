@@ -34,7 +34,7 @@ go-to: prussian_affairs
 @snap_election
 title: 提前选举
 subtitle: 举行提前选举。
-unavailable-subtitle: [? if chancellor != "Braun" and president != "Braun" : 布劳恩必须任总统或总理. ?][? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?] [? if president = "Braun" and presidential_powers : 我们已在宪法改革中取消了总统的这项权力。 ?]
+unavailable-subtitle: [? if chancellor != "Braun" and president != "Braun" : 布劳恩必须任总统或总理。 ?][? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?] [? if president = "Braun" and presidential_powers : 我们已在宪法改革中取消了总统的这项权力。 ?]
 choose-if: advisor_action_timer == 0 and (chancellor == "Braun" or (president == "Braun" and not presidential_powers))
 on-arrival: advisor_action_timer = 6; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time+3; next_election_year = year if next_election_time >= time+3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; 
 

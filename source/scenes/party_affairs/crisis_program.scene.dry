@@ -71,7 +71,7 @@ on-arrival: left_strength += 15; left_dissent -= 10; reformist_dissent += 10; ne
 With our hard work, we have convinced the majority of the party to adopt the socialist economic plan! [? if spd_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic or Finance ministries. ?] Bourgeois opposition is likely to be fierce. [? if spd_in_government == 0 : It might be difficult to enact the plan, given present conditions. ?]
 
 @support_moderate
-subtitle: Call for a limited program of job creation without deficit spending.
+subtitle: 呼吁实施无须赤字支出的小规模岗位创造计划。
 unavailable-subtitle: The Reformist faction is not strong enough.
 choose-if: historical_mode == 0 or (reformist_strength >= left_strength and reformist_strength >= center_strength and reformist_strength >= labor_strength)
 on-arrival: moderate_plan_support += 1; reformist_strength += 8; reformist_dissent -= 5; left_dissent += 6; labor_dissent += 5

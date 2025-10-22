@@ -36,16 +36,16 @@ Sender's message is popular among young women working in the service sector, and
 [? if spd_r < 50 : Unfortunately, women still disproportionately support the bourgeois parties. ?]
 
 @against_toleration
-title: Against toleration
+title: 反对容忍
 view-if: not constructive_vonc
-subtitle: Break our current toleration arrangement, and bring down the government via a no-confidence vote.
+subtitle: 结束我们当前的容忍协定，通过不信任投票推翻政府。
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?] [? if spd_toleration == 0 : The SPD is not currently in toleration. ?]
 choose-if: advisor_action_timer == 0 and spd_toleration
 on-arrival: advisor_action_timer = 6; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time + 3; next_election_year = year if next_election_time >= time + 3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; spd_toleration = 0; left_strength += 8; pro_republic -= 4; new_middle_spd -= 3; rural_spd -= 3; old_middle_spd -= 3; catholics_spd -= 3; reformist_dissent += 8
 
-We have grown tired of the burdens of toleration, and have called a vote of no confidence in the current minority government.
+我们已对容忍所带来的麻烦感到厌倦，并向现任少数派政府发起了不信任投票。
 
-New elections have been set for [+ next_election_year +]年[+ next_election_month : month +].
+新的选举定于[+ next_election_year +]年[+ next_election_month : month +]举行。
 
 @crisis
 title: 应对经济危机

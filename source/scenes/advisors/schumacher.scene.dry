@@ -1,13 +1,13 @@
-title: Kurt Schumacher
+title: 库尔特·舒马赫
 is-pinned-card: true
 tags: advisor, neorevisionist
 card-image: img/portraits/SchumacherKurt.jpg
 view-if: schumacher_advisor = 1
 new-page: true 
 
-= Kurt Schumacher
+= 库尔特·舒马赫
 
-A Great War veteran and a neorevisionist leader, Kurt Schumacher argues for a strong resistance against the Nazis.
+库尔特·舒马赫是世界大战的退伍军人及新修正主义领导人，他主张坚决抵抗纳粹。
 
 - @emergency_fundraising
 - @build_reichsbanner
@@ -27,16 +27,16 @@ on-arrival: advisor_action_timer = 6; resources += dues
 我们获得了+[+ dues +]资源。
 
 @build_reichsbanner
-title: Reichsbanner
-subtitle: Schumacher supports providing more resources to the Reichsbanner.
+title: 国旗团
+subtitle: 舒马赫支持向国旗团投入更多资源
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 on-arrival: advisor_action_timer = 6; reichsbanner_timer -= 6; last_advisor_action = 1
 go-to: reichsbanner
 
 @moderate_economic_plan
-title: Support the reformist economic plan
-subtitle: Call for a limited program of job creation without deficit spending.
+title: 支持改革派经济计划
+subtitle: 呼吁实施无须赤字支出的小规模岗位创造计划。
 choose-if: advisor_action_timer = 0 and moderate_plan_adopted = 0 and black_thursday_seen = 1
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?] [? if moderate_economic_plan = 0 : 我们已经采纳了改革派经济计划。 ?] [? if black_thursday_seen == 0 : 我们现在并未处于经济危机中 ?]
 on-arrival: advisor_action_timer = 6

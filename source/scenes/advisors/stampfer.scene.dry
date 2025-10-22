@@ -66,7 +66,7 @@ on-arrival: neorevisionist_dissent -= 8; neorevisionist_strength += 8
 Vorwärts prints editorials in support of neorevisionist ideas.
 
 @kpd_cooperation
-title: Cooperation with the KPD
+title: 与KPD合作
 subtitle: Could we build closer ties with the KPD?
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 choose-if: advisor_action_timer = 0
