@@ -1,13 +1,13 @@
-title: Toni Sender
+title: 托妮·森德
 is-pinned-card: true
 tags: advisor, left
 card-image: img/portraits/SenderToni.jpg
 view-if: sender_advisor = 1
 new-page: true 
 
-= Toni Sender
+= 托妮·森德
 
-Toni Sender is an organizer and writer who came from a bourgeois family, but was radicalized into socialism after her experiences in the workforce. She was a member of the anti-war USPD, but did not support armed revolution.
+托妮·森德是一位组织者兼作家，出身于资产阶级家庭，但在劳工阶层的经历使她转向激进的社会主义立场。她曾是反战的USPD成员，但并不支持武装革命。
 
 - @left_unity
 - @organizing_women
@@ -16,30 +16,30 @@ Toni Sender is an organizer and writer who came from a bourgeois family, but was
 - @root: 返回主页
 
 @left_unity
-title: Left-Center Unity
-subtitle: Encourage cooperation between the left and center wings of the party.
+title: 左中团结
+subtitle: 鼓励党内左派与中间派之间的合作。
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 on-arrival: advisor_action_timer = 6; left_dissent -= 10; labor_dissent -= 5; center_dissent -= 10; reformist_dissent -= 10; neorevisionist_dissent -= 5
 
-We have reduced dissent among the party's factions.
+我们减少了党内各派系的异议。
 
 @organizing_women
 title: 组织妇女
-subtitle: Sender's strategies are aimed at young working women.
+subtitle: 森德的策略针对的是年轻的职场女性。
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 on-arrival: womens_rights += 1; workers_spd += 3*(1-dissent); new_middle_spd += 5*(1-dissent); advisor_action_timer = 6
 
-Sender's message is popular among young women working in the service sector, and we have recruited many white-collar employees.
+森德的信息在从事服务业的年轻女性中很受欢迎，我们又吸收了很多白领职员。
 
-[? if spd_r < 50 : Unfortunately, women still disproportionately support the bourgeois parties. ?]
+[? if spd_r < 50 : 不幸的是，妇女仍然不成比例地支持资产阶级政党。 ?]
 
 @against_toleration
 title: 反对容忍
 view-if: not constructive_vonc
 subtitle: 结束我们当前的容忍协定，通过不信任投票推翻政府。
-unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?] [? if spd_toleration == 0 : The SPD is not currently in toleration. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?] [? if spd_toleration == 0 : 社民党并未处于容忍中。 ?]
 choose-if: advisor_action_timer == 0 and spd_toleration
 on-arrival: advisor_action_timer = 6; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time + 3; next_election_year = year if next_election_time >= time + 3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; spd_toleration = 0; left_strength += 8; pro_republic -= 4; new_middle_spd -= 3; rural_spd -= 3; old_middle_spd -= 3; catholics_spd -= 3; reformist_dissent += 8
 
@@ -49,7 +49,7 @@ on-arrival: advisor_action_timer = 6; next_election_time = time + 3 if next_elec
 
 @crisis
 title: 应对经济危机
-subtitle: Sender can help support a left-wing economic program.
+subtitle: 森德可以帮助支持左翼经济计划。
 choose-if: advisor_action_timer <= 0 and nationalization_adopted == 0 and black_thursday_seen == 1 and nationalization_support <= 3
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if black_thursday_seen == 0 : 我们现在并未处于经济危机中 ?][? if nationalization_adopted > 0 : 我们已经采纳了左翼计划。 ?]
 on-arrival: advisor_action_timer = 6;

@@ -83,7 +83,7 @@ Mass rallies are a common feature of social democratic life, especially in the l
 @class_struggle
 on-arrival: workers_spd += 4*(1-dissent); unemployed_spd += 3*(1-dissent) if left_strength > reformist_strength; workers_spd += 4*(1-dissent) if nationalization_progress > 0; unemployed_spd += 3*(1-dissent) if nationalization_progress > 0; left_strength += 5; left_dissent -= 5; old_middle_spd -= 3; new_middle_spd -= 2;
 
-Our message of class struggle appeals to the left wing of the working class, while potentially alienating the middle class. [? if nationalization_progress > 0 : Our achievements in nationalization have assisted our messaging. ?]
+我们关于阶级斗争的信息吸引了左翼工人阶级，同时可能疏远了中产阶层。[? if nationalization_progress > 0 : 我们国有化的成就使得我们的信息更有说服力。 ?]
 
 @welfare
 on-arrival: workers_spd += 3*(1-dissent); workers_spd += 3*(1-dissent) if welfare > 0; unemployed_spd += 3*(1-dissent) if welfare > 0; unemployed_spd += 4*(1-dissent) if welfare > 1; reformist_strength += 3; labor_strength += 4; reformist_dissent -= 3; labor_dissent -= 3;

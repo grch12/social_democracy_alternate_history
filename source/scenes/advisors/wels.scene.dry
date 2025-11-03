@@ -1,13 +1,13 @@
-title: Otto Wels
+title: 奥托·韦尔斯
 is-pinned-card: true
 tags: advisor, centrist
 card-image: img/portraits/WelsOtto.jpg
 view-if: wels_advisor = 1
 new-page: true
 
-= Otto Wels
+= 奥托·韦尔斯
 
-Wels is the long-time chairman of the SPD. He is a gifted organizer and a member of the centrist faction.
+韦尔斯是社民党长期以来的主席。他是一位有天赋的组织者和中间派成员。
 
 - @clear_agenda
 - @party_discipline
@@ -16,8 +16,8 @@ Wels is the long-time chairman of the SPD. He is a gifted organizer and a member
 - @root: 返回主页
 
 @clear_agenda
-title: Clear the agenda
-subtitle: Removes all cards from the hand.
+title: 清除议程
+subtitle: 移除手中所有的牌。
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 on-arrival: {!
@@ -29,7 +29,7 @@ if (Q.difficulty >= 0) {
 }
 !}
 
-All items from our agenda have been cleared.
+我们议程中的所有项目都已被清除。
 
 @party_discipline
 title: 党纪
@@ -53,7 +53,7 @@ on-arrival: advisor_action_timer = 6; resources += dues
 @snap_election
 title: 提前选举
 subtitle: 举行提前选举。
-unavailable-subtitle: [? if chancellor != "Wels" : Wels must be Chancellor or President. ?][? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
+unavailable-subtitle: [? if chancellor != "Wels" : 韦尔斯必须任总理。 ?][? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 choose-if: advisor_action_timer == 0 and (chancellor == "Wels")
 on-arrival: advisor_action_timer = 6; time_to_election = 3
 call: set_next_election_time
