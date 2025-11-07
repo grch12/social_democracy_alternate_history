@@ -25,7 +25,7 @@ go-to: international_relations
 
 @breitscheid_foreign
 title: 外交政策
-subtitle: 作为外交部长，布赖特沙伊德可以决定我们的外交政策。
+subtitle: 身为外交部长，布赖特沙伊德可以决定我们的外交政策。
 unavailable-subtitle: [? if not spd_in_government: 社民党并未执政。 ?] [? if foreign_minister_party != "SPD" : 社民党并未掌握外交部。 ?][? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 choose-if: advisor_action_timer == 0 and spd_in_government and foreign_minister_party == "SPD"
 on-arrival: advisor_action_timer = 6; foreign_policy_timer -= 8; last_advisor_action = 1

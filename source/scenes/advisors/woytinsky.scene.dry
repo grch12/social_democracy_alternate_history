@@ -1,13 +1,13 @@
-title: Wladimir Woytinsky
+title: 弗拉基米尔·沃伊廷斯基
 is-pinned-card: true
 tags: advisor, labor
 card-image: img/portraits/WoytinskyWladimir.jpg
 view-if: woytinsky_advisor = 1
 new-page: true 
 
-= Wladimir Woytinsky
+= 弗拉基米尔·沃伊廷斯基
 
-Wladimir Woytinsky is a Russian Menshevik in exile, and the chief economist of the socialist trade union federation. His primary idea is to use massive government spending as a way of stimulating demand to extricate us from the depression.
+弗拉基米尔·沃伊廷斯基是流亡中的俄罗斯孟什维克，同时担任社会主义工会联合会的首席经济学家。他的核心主张是通过大规模政府支出刺激需求，以此带领我们摆脱经济萧条。
 
 - @plan
 - @carry_out_policy
@@ -15,17 +15,17 @@ Wladimir Woytinsky is a Russian Menshevik in exile, and the chief economist of t
 - @root: 返回主页
 
 @plan
-title: Adopt the WTB-plan!
-subtitle: Convincing the rest of the party to support the WTB-plan.
+title: 采纳WTB计划！
+subtitle: 说服党内其他人支持WTB计划。
 choose-if: advisor_action_timer <= 0 and wtb_adopted == 0 and wtb_support >= 3 and black_thursday_seen and (not historical_mode or ((labor_strength >= center_strength) and (labor_strength >= left_strength) and (labor_strength >= reformist_strength)))
 on-arrival: advisor_action_timer = 6;
-unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if black_thursday_seen == 0 : 我们现在并未处于经济危机中 ?][? if wtb_adopted > 0 : 我们已经采纳了WTB计划。 ?][? if wtb_support < 3 : There is not enough support for the WTB-Plan. ?][? if (labor_strength < center_strength or labor_strength < left_strength or labor_strength < reformist_strength) and historical_mode : The labor faction is not strong enough. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if black_thursday_seen == 0 : 我们现在并未处于经济危机中 ?][? if wtb_adopted > 0 : 我们已经采纳了WTB计划。 ?][? if wtb_support < 3 : WTB计划还没有得到足够支持。 ?][? if (labor_strength < center_strength or labor_strength < left_strength or labor_strength < reformist_strength) and historical_mode : 劳工派不够强大。 ?]
 go-to: crisis_program.plan_adopted
 
 @carry_out_policy
-title: Carry out the economic plan.
-subtitle: If we are in government, we can carry out a public works program such as the WTB-Plan.
-unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if wtb_adopted == 0 : We have not yet adopted an economic plan. ?][? if spd_in_government == 0 : 社民党并未执政。 ?][? if works_program >= 2 : We have already started implementing the plan. ?]
+title: 执行经济计划
+subtitle: 如果我们处于执政中，我们可以实施如WTB计划等公共工程计划。
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if wtb_adopted == 0 : 我们还没有采纳一项计划。 ?][? if spd_in_government == 0 : 社民党并未执政。 ?][? if works_program >= 2 : 我们已经开始实施计划了。 ?]
 choose-if: advisor_action_timer <= 0 and wtb_adopted and spd_in_government and wtb_implemented <= 1
 on-arrival: advisor_action_timer = 6; economic_policy_timer -= 12
 go-to: economic_policy
@@ -33,9 +33,9 @@ go-to: economic_policy
 
 @depression
 title: 应对经济危机
-subtitle: Formulate a plan to get us out of the economic crisis.
+subtitle: 制定一个计划来帮我们摆脱经济危机。
 choose-if: advisor_action_timer <= 0 and wtb_adopted == 0 and black_thursday_seen == 1 and wtb_support <= 3
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if black_thursday_seen == 0 : 我们现在并未处于经济危机中 ?][? if wtb_adopted > 0 : 我们已经采纳了WTB计划。 ?]
 on-arrival: advisor_action_timer = 6; wtb_support += 2; center_dissent += 10; labor_strength += 1
 
-The WTB-plan, named for its primary supporters Woytinsky, Tarnow, and Baade, has been adopted as the unions' plan for getting us out of the depression. Woytinsky canvasses in favor of this policy through the SPD and the unions.
+WTB计划——其名称源于主要倡导者沃伊廷斯基、塔诺和巴德——已被采纳为工会摆脱经济萧条的方案。沃伊廷斯基正在党和工会中为该计划进行游说。

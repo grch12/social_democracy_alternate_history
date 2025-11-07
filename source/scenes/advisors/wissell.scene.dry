@@ -1,23 +1,23 @@
-title: Rudolf Wissell
+title: 鲁道夫·维塞尔
 is-pinned-card: true
 tags: advisor, labor
 card-image: img/portraits/WissellRudolf.jpg
 view-if: wissell_advisor = 1
 new-page: true 
 
-= Rudolf Wissell
+= 鲁道夫·维塞尔
 
-Wissell is a labor economist working for the ADGB, the federation of free trade unions, and has been a labor minister on multiple occasions. His priority is to improve conditions for organized workers.
+维塞尔是为自由工会联合会ADGB工作的劳工派经济学家，曾多次担任劳工部长。他最关注的是改善工会组织的工人待遇。
 
 - @labor_rights_
 - @union_unity
 - @root: 返回主页
 
 @labor_rights_
-title: Labor Rights
-subtitle: As Labor Minister, Wissell can help set regulations for working conditions.
+title: 工人权利
+subtitle: 身为劳工部长，维塞尔可以帮助设定改善工作条件的规章。
 choose-if: advisor_action_timer <= 0 and spd_in_government and labor_minister_party = "SPD"
-unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if labor_minister_party != "SPD" : The SPD does not control the Labor Ministry. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if labor_minister_party != "SPD" : 社民党并未掌握劳工部。 ?]
 on-arrival: advisor_action_timer = 6; labor_rights_timer -= 10; last_advisor_action = 1
 go-to: labor_rights
 

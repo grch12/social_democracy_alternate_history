@@ -25,7 +25,7 @@ on-arrival: advisor_action_timer = 6; coalition_dissent -= 1 if spd_in_governmen
 
 @prussian_bulwark
 title: 普鲁士堡垒
-subtitle: 作为普鲁士州长，布劳恩对普鲁士官僚机构和安全部门拥有权力。
+subtitle: 身为普鲁士州长，布劳恩对普鲁士官僚机构和安全部门拥有权力。
 choose-if: advisor_action_timer <= 0 and spd_prussia = 1
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if spd_prussia == 0 : 社民党并未掌握普鲁士州政府。 ?]
 on-arrival: advisor_action_timer = 6; prussian_affairs_timer -= 6; last_advisor_action = 1
