@@ -52,7 +52,7 @@ go-to: rm_main
 韦尔斯已被免去顾问职务。中间派不赞成。
 
 @remove_muller
-title: Remove 米勒
+title: 罢免米勒
 view-if: muller_advisor = 1
 tags: remove_advisor
 on-arrival: muller_advisor = 0; center_dissent += 5; n_advisors -= 1
@@ -62,7 +62,7 @@ go-to: rm_main
 
 
 @remove_breitscheid
-title: Remove 布赖特沙伊德
+title: 罢免布赖特沙伊德
 view-if: breitscheid_advisor = 1
 tags: remove_advisor
 on-arrival: breitscheid_advisor = 0; center_dissent += 5; n_advisors -= 1
@@ -74,7 +74,7 @@ go-to: rm_main
 
 
 @remove_severing
-title: Remove 泽韦林
+title: 罢免泽韦林
 view-if: severing_advisor = 1
 tags: remove_advisor
 on-arrival: severing_advisor = 0; reformist_dissent += 5; n_advisors -= 1
@@ -83,7 +83,7 @@ go-to: rm_main
 泽韦林已被免去顾问职务。改革派不赞成。
 
 @remove_braun
-title: Remove 布劳恩
+title: 罢免布劳恩
 view-if: braun_advisor = 1
 tags: remove_advisor
 on-arrival: braun_advisor = 0; reformist_dissent += 5; n_advisors -= 1
@@ -92,7 +92,7 @@ go-to: rm_main
 布劳恩已被免去顾问职务。改革派不赞成。
 
 @remove_juchacz
-title: Remove 尤哈奇
+title: 罢免尤哈奇
 view-if: juchacz_advisor = 1
 tags: remove_advisor
 on-arrival: juchacz_advisor = 0; reformist_dissent += 5; n_advisors -= 1
@@ -101,7 +101,7 @@ go-to: rm_main
 尤哈奇已被免去顾问职务。改革派不赞成。
 
 @remove_pfulf
-title: Remove 普菲尔夫
+title: 罢免普菲尔夫
 view-if: pfulf_advisor = 1
 tags: remove_advisor
 on-arrival: pfulf_advisor = 0; reformist_dissent += 5; n_advisors -= 1
@@ -113,7 +113,7 @@ go-to: rm_main
 # labor
 
 @remove_leipart
-title: Remove 莱帕特
+title: 罢免莱帕特
 view-if: leipart_advisor = 1
 tags: remove_advisor
 on-arrival: leipart_advisor = 0; labor_dissent += 5; n_advisors -= 1
@@ -122,7 +122,7 @@ go-to: rm_main
 莱帕特已被免去顾问职务。劳工派不赞成。
 
 @remove_aufhauser
-title: Remove 奥夫豪泽
+title: 罢免奥夫豪泽
 view-if: aufhauser_advisor = 1
 tags: remove_advisor
 on-arrival: aufhauser_advisor = 0; labor_dissent += 5; n_advisors -= 1
@@ -131,7 +131,7 @@ go-to: rm_main
 奥夫豪泽已被免去顾问职务。劳工派不赞成。
 
 @remove_wissell
-title: Remove 维塞尔
+title: 罢免维塞尔
 view-if: wissell_advisor = 1
 tags: remove_advisor
 on-arrival: wissell_advisor = 0; labor_dissent += 3; n_advisors -= 1
@@ -141,7 +141,7 @@ go-to: rm_main
 
 
 @remove_woytinsky
-title: Remove 沃伊廷斯基
+title: 罢免沃伊廷斯基
 view-if: woytinsky_advisor = 1
 tags: remove_advisor
 on-arrival: woytinsky_advisor = 0; labor_dissent += 3; n_advisors -= 1
@@ -152,7 +152,7 @@ go-to: rm_main
 # left
 
 @remove_levi
-title: Remove 列维
+title: 罢免列维
 view-if: levi_advisor = 1
 tags: remove_advisor
 on-arrival: levi_advisor = 0; left_dissent += 5; n_advisors -= 1
@@ -161,7 +161,7 @@ go-to: rm_main
 列维已被免去顾问职务。左派不赞成。
 
 @remove_sender
-title: Remove 森德
+title: 罢免森德
 view-if: sender_advisor = 1
 tags: remove_advisor
 on-arrival: sender_advisor = 0; left_dissent += 3; n_advisors -= 1
@@ -170,7 +170,7 @@ go-to: rm_main
 森德已被免去顾问职务。左派不赞成。
 
 @remove_rosenfeld
-title: Remove 罗森菲尔德
+title: 罢免罗森菲尔德
 view-if: rosenfeld_advisor = 1
 tags: remove_advisor
 on-arrival: rosenfeld_advisor = 0; left_dissent += 3; n_advisors -= 1
@@ -179,7 +179,7 @@ go-to: rm_main
 罗森菲尔德已被免去顾问职务。左派不赞成。
 
 @remove_seydewitz
-title: Remove 赛德维茨
+title: 罢免赛德维茨
 view-if: seydewitz_advisor = 1
 tags: remove_advisor
 on-arrival: seydewitz_advisor = 0; left_dissent += 3; n_advisors -= 1
@@ -188,7 +188,7 @@ go-to: rm_main
 赛德维茨已被免去顾问职务。左派不赞成。
 
 @remove_siemsen
-title: Remove 西姆森
+title: 罢免西姆森
 view-if: siemsen_advisor = 1
 tags: remove_advisor
 on-arrival: siemsen_advisor = 0; left_dissent += 3; n_advisors -= 1
@@ -202,7 +202,7 @@ go-to: rm_main
 # neorevisionists
 
 @remove_mierendorff
-title: Remove 米伦多夫
+title: 罢免米伦多夫
 view-if: mierendorff_advisor = 1
 tags: remove_advisor
 on-arrival: mierendorff_advisor = 0; neorevisionist_dissent += 5; n_advisors -= 1
@@ -211,7 +211,7 @@ go-to: rm_main
 米伦多夫已被免去顾问职务。新修正主义派不赞成。
 
 @remove_leber
-title: Remove 莱贝尔
+title: 罢免莱贝尔
 view-if: leber_advisor = 1
 tags: remove_advisor
 on-arrival: leber_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
@@ -220,7 +220,7 @@ go-to: rm_main
 莱贝尔已被免去顾问职务。新修正主义派不赞成。
 
 @remove_schumacher
-title: Remove 舒马赫
+title: 罢免舒马赫
 view-if: schumacher_advisor = 1
 tags: remove_advisor
 on-arrival: schumacher_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
@@ -234,7 +234,7 @@ go-to: rm_main
 # tbh I'm not sure if Baade should be a reformist or nonfactional. same for stampfer. they were vaguely reformist-aligned but had pretty different ideas from the other reformists here. so they're non-factional.
 
 @remove_baade
-title: Remove 巴德
+title: 罢免巴德
 view-if: baade_advisor = 1
 tags: remove_advisor
 on-arrival: baade_advisor = 0; n_advisors -= 1
@@ -246,7 +246,7 @@ go-to: rm_main
 
 
 @remove_hirschfeld
-title: Remove 赫希菲尔德
+title: 罢免赫希菲尔德
 view-if: hirschfeld_advisor = 1
 tags: remove_advisor
 on-arrival: hirschfeld_advisor = 0; n_advisors -= 1
@@ -255,7 +255,7 @@ go-to: rm_main
 赫希菲尔德已被免去顾问职务。 
 
 @remove_stampfer
-title: Remove 施坦普费尔
+title: 罢免施坦普费尔
 view-if: stampfer_advisor = 1
 tags: remove_advisor
 on-arrival: stampfer_advisor = 0; n_advisors -= 1
@@ -264,7 +264,7 @@ go-to: rm_main
 施坦普费尔已被免去顾问职务。 
 
 @remove_radbruch
-title: Remove 拉德布鲁赫
+title: 罢免拉德布鲁赫
 view-if: radbruch_advisor = 1
 tags: remove_advisor
 on-arrival: radbruch_advisor = 0; n_advisors -= 1
@@ -290,14 +290,14 @@ tags: center_advisor, left_advisor, reformist_advisor, labor_advisor, neorev_adv
 frequency: 1
 
 
-- @centrist: Add Centrists
-- @left: Add Leftists
-- @reformist: Add Reformists
-- @labor: Add Labor
-- @neorev: Add Neorevisionists
-- @nonfactional: Add non-factional advisors
-- @rm_main: Remove advisors instead.
-- @remove_none: Stop changing advisors.
+- @centrist: 添加中间派
+- @left: 添加左派
+- @reformist: 添加改革派
+- @labor: 添加劳工派
+- @neorev: 添加新修正主义者
+- @nonfactional: 添加无派系顾问
+- @rm_main: 改为罢免顾问。
+- @remove_none: 停止更换顾问。
 
 @centrist
 view-if: n_advisors < 3
@@ -330,8 +330,8 @@ view-if: n_advisors < 3
 - #nonfactional_advisor
 
 @add_hilferding
-title: Rudolf Hilferding
-subtitle: Rudolf Hilferding is an economist and one of our chief Marxist theoreticians. {!<br><br>!}[? if difficulty < 0 : Actions - Against Right and Left, 坚持容忍, 财政政策, Economic Democracy ?]
+title: 鲁道夫·希法亭
+subtitle: 鲁道夫·希法亭是经济学家，也是我们的首席马克思主义理论家之一。{!<br><br>!}[? if difficulty < 0 : 行动 — 反对左右两派, 坚持容忍, 财政政策, 经济民主 ?]
 is-card: true
 card-image: img/portraits/HilferdingRudolf.jpg
 tags: center_advisor
@@ -339,11 +339,11 @@ view-if: hilferding_advisor = 0 and n_advisors < 3 and centrists_resign = 0
 on-arrival: hilferding_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
-Rudolf Hilferding is now an advisor.
+鲁道夫·希法亭被任命为顾问
 
 @add_wels
 title: 奥托·韦尔斯
-subtitle: 奥托·韦尔斯 is a long-time party organizer and member of the leadership, serving under Friedrich Ebert. {!<br><br>!}[? if difficulty < 0 : Actions -  清除议程, Party Discipline, 紧急筹款 ?]
+subtitle: 奥托·韦尔斯是长期担任党务组织者和领导层成员，曾效力于弗里德里希·艾伯特麾下。{!<br><br>!}[? if difficulty < 0 : 行动 — 清除议程, 党纪, 紧急筹款, 提前选举 ?]
 is-card: true
 card-image: img/portraits/WelsRudolf.jpg
 tags: center_advisor
@@ -351,11 +351,11 @@ view-if: wels_advisor = 0 and n_advisors < 3 and centrists_resign = 0
 on-arrival: wels_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
-奥托·韦尔斯 is now an advisor.
+奥托·韦尔斯被任命为顾问
 
 @add_muller
 title: 赫尔曼·米勒
-subtitle: 赫尔曼·米勒 is the last Social Democratic Chancellor. {!<br><br>!}[? if difficulty < 0 : Actions - 与联盟谈判, 坚持容忍 ?]
+subtitle: 赫尔曼·米勒是最后一任社民党总理。{!<br><br>!}[? if difficulty < 0 : 行动 — 与联盟谈判, 坚持容忍, 提前选举 ?]
 is-card: true
 card-image: img/portraits/MüllerHermann.jpg
 tags: center_advisor
@@ -363,11 +363,11 @@ view-if: muller_advisor = 0 and muller_dead = 0 and n_advisors < 3 and centrists
 on-arrival: muller_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
-赫尔曼·米勒 is now an advisor.
+赫尔曼·米勒被任命为顾问
 
 @add_breitscheid
 title: 鲁道夫·布赖特沙伊德
-subtitle: 鲁道夫·布赖特沙伊德 comes from a well-educated background and is one of our foreign policy leaders. {!<br><br>!}[? if difficulty < 0 : Actions - International Relations, Foreign Policy, Party Discipline ?]
+subtitle: 鲁道夫·布赖特沙伊德出身于教育良好的背景，是我们的外交政策领导人之一。{!<br><br>!}[? if difficulty < 0 : 行动 — 国际关系, 外交政策, 党纪, 提前选举 ?]
 is-card: true
 card-image: img/portraits/BreitscheidRudolf.jpg
 view-if: breitscheid_advisor = 0 and n_advisors < 3
@@ -375,14 +375,14 @@ on-arrival: breitscheid_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 tags: center_advisor
 
-鲁道夫·布赖特沙伊德 is now an advisor.
+鲁道夫·布赖特沙伊德被任命为顾问
 
 # reformist
 
 
 @add_severing
 title: 卡尔·泽韦林
-subtitle: 卡尔·泽韦林 is a one-time Prussian interior minister and police reformer. {!<br><br>!}[? if difficulty < 0 : Actions - 普鲁士堡垒, 警察事务?]
+subtitle: 卡尔·泽韦林曾任普鲁士内政部长，是一位警察机构改革者。{!<br><br>!}[? if difficulty < 0 : 行动 — 普鲁士堡垒, 警察事务?]
 is-card: true
 card-image: img/portraits/SeveringCarl.jpg
 tags: reformist_advisor
@@ -390,11 +390,11 @@ view-if: severing_advisor = 0 and n_advisors < 3
 on-arrival: severing_advisor = 1; n_advisors += 1; reformist_strength += 5
 go-to: advisor_menu
 
-卡尔·泽韦林 is now an advisor.
+卡尔·泽韦林被任命为顾问
 
 @add_braun
 title: 奥托·布劳恩
-subtitle: 奥托·布劳恩 is the Minister-President of Prussia, and one of the most recognizable and well-known Social Democratic leaders. {!<br><br>!}[? if difficulty < 0 : Actions - 普鲁士堡垒, 与联盟谈判 ?]
+subtitle: 奥托·布劳恩是普鲁士州长，也是社民党最知名的领导人之一。{!<br><br>!}[? if difficulty < 0 : 行动 — 普鲁士堡垒, 与联盟谈判 ?]
 is-card: true
 card-image: img/portraits/BraunOtto.jpg
 tags: reformist_advisor
@@ -402,11 +402,11 @@ view-if: braun_advisor = 0 and n_advisors < 3
 on-arrival: braun_advisor = 1; n_advisors += 1; reformist_strength += 5
 go-to: advisor_menu
 
-奥托·布劳恩 is now an advisor.
+奥托·布劳恩被任命为顾问
 
 @add_juchacz
 title: 玛丽·尤哈奇
-subtitle: 玛丽·尤哈奇 is the founder of Worker's Welfare, a mutual-aid organization. {!<br><br>!}[? if difficulty < 0 : Actions - 紧急筹款, Worker's Welfare, Organizing Women ?]
+subtitle: 玛丽·尤哈奇是互助组织工人福利委员会的创始人。{!<br><br>!}[? if difficulty < 0 : 行动 — 紧急筹款, 工人福利, 组织妇女 ?]
 is-card: true
 card-image: img/portraits/JuchaczMarie.jpg
 view-if: juchacz_advisor = 0 and n_advisors < 3
@@ -414,11 +414,11 @@ on-arrival: juchacz_advisor = 1; n_advisors += 1; reformist_strength += 5
 go-to: advisor_menu
 tags: reformist_advisor
 
-玛丽·尤哈奇 is now an advisor.
+玛丽·尤哈奇被任命为顾问
 
 @add_pfulf
 title: 安东尼·普菲尔夫
-subtitle: 安东尼·普菲尔夫 is a leader in social policy and women's rights. {!<br><br>!}[? if difficulty < 0 : Actions - Support a People's Party, 妇女权利 ?]
+subtitle: 安东尼·普菲尔夫是社会政策和妇女权利领导人。{!<br><br>!}[? if difficulty < 0 : 行动 — 支持全民党, 妇女权利 ?]
 is-card: true
 card-image: img/portraits/PfülfAntonie.jpg
 view-if: pfulf_advisor = 0 and n_advisors < 3
@@ -426,7 +426,7 @@ on-arrival: pfulf_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 tags: reformist_advisor
 
-安东尼·普菲尔夫 is now an advisor.
+安东尼·普菲尔夫被任命为顾问
 
 
 
@@ -434,7 +434,7 @@ tags: reformist_advisor
 
 @add_levi
 title: 保罗·列维
-subtitle: 保罗·列维 is a former KPD leader who was purged for criticizing Communist policies. {!<br><br>!}[? if difficulty < 0 : Actions - 增强左翼, 与KPD合作 ?]
+subtitle: 保罗·列维是KPD的前领导人，因批评共产主义政策而被清洗。{!<br><br>!}[? if difficulty < 0 : 行动 — 增强左翼, 与KPD合作 ?]
 is-card: true
 card-image: img/portraits/LeviPaul.jpg
 view-if: levi_advisor = 0 and levi_dead = 0 and n_advisors < 3 and left_split = 0
@@ -442,11 +442,11 @@ on-arrival: levi_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
 
-保罗·列维 is now an advisor.
+保罗·列维被任命为顾问
 
 @add_sender
 title: 托妮·森德
-subtitle: 托妮·森德 is an anti-war and womens' rights advocate, and Reichstag member. {!<br><br>!}[? if difficulty < 0 : Actions - Left-Center Unity, Organizing Women, 反对容忍, 应对经济危机 ?]
+subtitle: 托妮·森德是反战人士及妇女权利倡导者，也是国会议员。{!<br><br>!}[? if difficulty < 0 : 行动 — 左中团结, 组织妇女, 反对容忍, 应对经济危机 ?]
 is-card: true
 card-image: img/portraits/SenderToni.jpg
 view-if: sender_advisor = 0 and n_advisors < 3
@@ -454,11 +454,11 @@ on-arrival: sender_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
 
-托妮·森德 is now an advisor.
+托妮·森德被任命为顾问
 
 @add_rosenfeld
 title: 库尔特·罗森菲尔德
-subtitle: 库尔特·罗森菲尔德 is a lawyer, anti-militarist activist, and Reichstag member. {!<br><br>!}[? if difficulty < 0 : Actions - 增强左翼, 与KPD合作, 反对容忍 ?]
+subtitle: 库尔特·罗森菲尔德是律师、反军国主义活动家兼国会议员。{!<br><br>!}[? if difficulty < 0 : 行动 — 增强左翼, 与KPD合作, 反对容忍 ?]
 is-card: true
 card-image: img/portraits/RosenfeldKurt.jpg
 view-if: rosenfeld_advisor = 0 and n_advisors < 3 and left_split = 0
@@ -466,11 +466,11 @@ on-arrival: rosenfeld_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
 
-库尔特·罗森菲尔德 is now an advisor.
+库尔特·罗森菲尔德被任命为顾问
 
 @add_seydewitz
 title: 马克斯·赛德维茨
-subtitle: 马克斯·赛德维茨 is a former leader of the youth wing, current supporter of the left wing of the SPD, and advocates for class struggle. {!<br><br>!}[? if difficulty < 0 : Actions - Rally for Class Struggle, Socialist Youth, 反对容忍 ?]
+subtitle: 马克斯·赛德维茨是我们青年团的前领导人，现在是社民党左翼的支持者，倡导阶级斗争。{!<br><br>!}[? if difficulty < 0 : 行动 — 阶级斗争集会, 社会主义青年团, 反对容忍 ?]
 is-card: true
 card-image: img/portraits/SeydewitzMax.jpg
 view-if: seydewitz_advisor = 0 and n_advisors < 3 and left_split = 0
@@ -478,11 +478,11 @@ on-arrival: seydewitz_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
 
-马克斯·赛德维茨 is now an advisor.
+马克斯·赛德维茨被任命为顾问
 
 @add_siemsen
 title: 安娜·西姆森
-subtitle: 安娜·西姆森 is an and educational reform advocate and pacifist, who was one of the few German women to receive a PhD in the pre-war period. {!<br><br>!}[? if difficulty < 0 : Actions - Rally for Pacifism, Educational Curriculum, Educational Structure ?]
+subtitle: 安娜·西姆森是教育改革倡导者及和平主义者，也是战前少数获得博士学位的德国女性之一。{!<br><br>!}[? if difficulty < 0 : 行动 — 和平主义集会, 教育课程, 教育结构 ?]
 is-card: true
 card-image: img/portraits/SiemsenAnna.jpg
 view-if: siemsen_advisor = 0 and n_advisors < 3 and left_split = 0
@@ -490,7 +490,7 @@ on-arrival: siemsen_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
 
-安娜·西姆森 is now an advisor.
+安娜·西姆森被任命为顾问
 
 
 
@@ -498,7 +498,7 @@ tags: left_advisor
 
 @add_leipart
 title: 西奥多·莱帕特
-subtitle: 西奥多·莱帕特 is the leader of the ADGB, the German Trade Union Federation. {!<br><br>!}[? if difficulty < 0 : Actions - Organizing Workers, 应对经济危机 ?]
+subtitle: 西奥多·莱帕特是德国总工会联合会（ADGB）的领袖{!<br><br>!}[? if difficulty < 0 : 行动 — 组织工人, 应对经济危机 ?]
 is-card: true
 card-image: img/portraits/LeipartTheodor.jpg
 tags: labor_advisor
@@ -506,11 +506,11 @@ view-if: leipart_advisor = 0 and n_advisors < 3 and unions_independent = 0
 on-arrival: leipart_advisor = 1; n_advisors += 1; labor_strength += 5
 go-to: advisor_menu
 
-西奥多·莱帕特 is now an advisor.
+西奥多·莱帕特被任命为顾问
 
 @add_aufhauser
 title: 齐格弗里德·奥夫豪泽
-subtitle: 齐格弗里德·奥夫豪泽 is the leader of the AfA-Bund, the white-collar trade union federation. {!<br><br>!}[? if difficulty < 0 : Actions - Organizing White-Collar Workers, 工会与党的协调, 应对经济危机 ?]
+subtitle: 齐格弗里德·奥夫豪泽是AfA-Bund，社会主义蓝领工人工会联合会的领袖。{!<br><br>!}[? if difficulty < 0 : 行动 — 组织白领职员, 工会与党的协调, 应对经济危机 ?]
 is-card: true
 card-image: img/portraits/AufhäuserSiegfried.jpg
 tags: labor_advisor
@@ -518,11 +518,11 @@ view-if: aufhauser_advisor = 0 and n_advisors < 3
 on-arrival: aufhauser_advisor = 1; n_advisors += 1; labor_strength += 5
 go-to: advisor_menu
 
-齐格弗里德·奥夫豪泽 is now an advisor.
+齐格弗里德·奥夫豪泽被任命为顾问
 
 @add_wissell
 title: 鲁道夫·维塞尔
-subtitle: 鲁道夫·维塞尔 is an economist who has been the Labor Minister, and is an advocate for the interests of labor within the government. {!<br><br>!}[? if difficulty < 0 : Actions - 工会与党的协调, Labor Rights ?]
+subtitle: 鲁道夫·维塞尔是经济学家，曾任劳工部长，是政府中的工人权利倡导者。{!<br><br>!}[? if difficulty < 0 : 行动 — 工会与党的协调, 工人权利 ?]
 is-card: true
 card-image: img/portraits/WissellRudolf.jpg
 tags: labor_advisor
@@ -530,12 +530,12 @@ view-if: wissell_advisor = 0 and n_advisors < 3 and unions_independent = 0
 on-arrival: wissell_advisor = 1; n_advisors += 1; labor_strength += 3
 go-to: advisor_menu
 
-鲁道夫·维塞尔 is now an advisor.
+鲁道夫·维塞尔被任命为顾问
 
 
 @add_woytinsky
 title: 弗拉基米尔·沃伊廷斯基
-subtitle: 弗拉基米尔·沃伊廷斯基 is a former Russian Menshevik who is now the lead trade union economist. {!<br><br>!}[? if difficulty < 0 : Actions - 应对经济危机, Carrying Out the Economic Plan ?]
+subtitle: 弗拉基米尔·沃伊廷斯基是前俄罗斯孟什维克，现在任社会主义工会联合会首席经济学家。{!<br><br>!}[? if difficulty < 0 : 行动 — 应对经济危机, 执行经济计划 ?]
 is-card: true
 card-image: img/portraits/WoytinskyWladimir.jpg
 tags: labor_advisor
@@ -543,14 +543,14 @@ view-if: woytinsky_advisor = 0 and n_advisors < 3 and unions_independent = 0
 on-arrival: woytinsky_advisor = 1; n_advisors += 1; labor_strength += 3
 go-to: advisor_menu
 
-弗拉基米尔·沃伊廷斯基 is now an advisor.
+弗拉基米尔·沃伊廷斯基被任命为顾问
 
 
 # neorevisionist leaders
 
 @add_mierendorff
 title: 卡洛·米伦多夫
-subtitle: 卡洛·米伦多夫 is one of the youngest members of the Reichstag, and the originator of the "Neo-Revisionist" movement. He is an anti-Nazi strategist. {!<br><br>!}[? if difficulty < 0 : Actions - Build the Iron Front, Warning About the Nazis ?]
+subtitle: 卡洛·米伦多夫是我们最年轻的国会议员之一，也是“新修正主义”运动的发起者。他是一位反纳粹战术家。{!<br><br>!}[? if difficulty < 0 : 行动 — 成立钢铁阵线, 警告纳粹威胁 ?]
 is-card: true
 card-image: img/portraits/MierendorffCarlo.jpg
 view-if: mierendorff_advisor = 0 and n_advisors < 3
@@ -558,11 +558,11 @@ on-arrival: mierendorff_advisor = 1; n_advisors += 1; neorevisionist_strength +=
 go-to: advisor_menu
 tags: neorev_advisor
 
-卡洛·米伦多夫 is now an advisor.
+卡洛·米伦多夫被任命为顾问
 
 @add_schumacher
 title: 库尔特·舒马赫
-subtitle: 库尔特·舒马赫 is a Great War veteran and energetic speaker for the social-democratic cause, and favors reformist policies. {!<br><br>!}[? if difficulty < 0 : Actions - 紧急筹款, Building the Reichsbanner, 应对经济危机 ?]
+subtitle: 库尔特·舒马赫是世界大战的退伍军人是社民党精力充沛的演讲者，支持改良主义政策。{!<br><br>!}[? if difficulty < 0 : 行动 — 紧急筹款, 增强国旗团, 应对经济危机 ?]
 is-card: true
 card-image: img/portraits/SchumacherKurt.jpg
 tags: neorev_advisor
@@ -570,11 +570,11 @@ view-if: schumacher_advisor = 0 and n_advisors < 3
 on-arrival: schumacher_advisor = 1; n_advisors += 1; neorevisionist_strength += 5
 go-to: advisor_menu
 
-库尔特·舒马赫 is now an advisor.
+库尔特·舒马赫被任命为顾问
 
 @add_leber
 title: 尤利乌斯·莱贝尔
-subtitle: 尤利乌斯·莱贝尔 is a former Reichswehr officer who resigned in opposition to the Kapp coup attempt. {!<br><br>!}[? if difficulty < 0 : Actions - Rally for Democracy, Military Affairs, 建立全民党 ?]
+subtitle: 尤利乌斯·莱贝尔是前国防军军官，因反对卡普政变而辞职。{!<br><br>!}[? if difficulty < 0 : 行动 — 民主集会, 军事事务, 建立全民党 ?]
 is-card: true
 card-image: img/portraits/LeberJulius.jpg
 view-if: leber_advisor = 0 and n_advisors < 3
@@ -582,13 +582,13 @@ on-arrival: leber_advisor = 1; n_advisors += 1; neorevisionist_strength += 5
 go-to: advisor_menu
 tags: neorev_advisor
 
-尤利乌斯·莱贝尔 is now an advisor.
+尤利乌斯·莱贝尔被任命为顾问
 
 # Nonfactional advisors
 
 @add_baade
 title: 弗里茨·巴德
-subtitle: 弗里茨·巴德 is one of the few agricultural policy experts in the SPD. {!<br><br>!}[? if difficulty < 0 : Actions - Agricultural Policy, Rural Campaigning, 应对经济危机 ?]
+subtitle: 弗里茨·巴德是社民党内鲜有的农业专家。{!<br><br>!}[? if difficulty < 0 : 行动 — 农业政策, 农村竞选, 应对经济危机 ?]
 is-card: true
 card-image: img/portraits/BaadeFritz.jpg
 view-if: baade_advisor = 0 and n_advisors < 3
@@ -596,12 +596,12 @@ on-arrival: baade_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 tags: nonfactional_advisor
 
-弗里茨·巴德 is now an advisor.
+弗里茨·巴德被任命为顾问
 
 
 @add_hirschfeld
 title: 马格努斯·赫希菲尔德
-subtitle: 马格努斯·赫希菲尔德 is the founder of the Institut für Sexualwissenschaft and an advocate for the rights of sexual minorities. {!<br><br>!}[? if difficulty < 0 : Actions - 同性恋权利, 妇女权利, Science Funding ?]
+subtitle: 马格努斯·赫希菲尔德是性学研究所的创立者及性少数权利倡导者。{!<br><br>!}[? if difficulty < 0 : 行动 — 同性恋权利, 妇女权利, 科学资金 ?]
 is-card: true
 card-image: img/portraits/HirschfeldMagnus.jpg
 view-if: hirschfeld_advisor = 0 and n_advisors < 3
@@ -609,13 +609,13 @@ on-arrival: hirschfeld_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 tags: nonfactional_advisor
 
-马格努斯·赫希菲尔德 is now an advisor.
+马格努斯·赫希菲尔德被任命为顾问
 
 # TODO: add radbruch, stampfer
 
 @add_radbruch
 title: 古斯塔夫·拉德布鲁赫
-subtitle: 古斯塔夫·拉德布鲁赫 is a renowned legal scholar and long-time SPD justice minister. {!<br><br>!}[? if difficulty < 0 : Actions - Judicial Affairs, Constitutional Reform ?]
+subtitle: 古斯塔夫·拉德布鲁赫是一位享有盛誉的法学家，也是社民党长期以来的司法部长。{!<br><br>!}[? if difficulty < 0 : 行动 — 司法事务, 宪法改革 ?]
 is-card: true
 card-image: img/portraits/RadbruchGustav.jpg
 view-if: radbruch_advisor = 0 and n_advisors < 3
@@ -623,12 +623,12 @@ on-arrival: radbruch_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 tags: nonfactional_advisor
 
-古斯塔夫·拉德布鲁赫 is now an advisor.
+古斯塔夫·拉德布鲁赫被任命为顾问
 
 
 @add_stampfer
 title: 弗里德里希·施坦普费尔
-subtitle: 弗里德里希·施坦普费尔 is the long-time editor-in-chief of Vorwärts, our party newspaper. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, 与KPD合作 ?]
+subtitle: 弗里德里希·施坦普费尔是我们的党报《前进报》长期以来的总编辑。{!<br><br>!}[? if difficulty < 0 : 行动 — 媒体, 编辑方针, 与KPD合作 ?]
 is-card: true
 card-image: img/portraits/StampferFriedrich.jpg
 view-if: stampfer_advisor = 0 and n_advisors < 3
@@ -636,6 +636,6 @@ on-arrival: stampfer_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 tags: nonfactional_advisor
 
-弗里德里希·施坦普费尔 is now an advisor.
+弗里德里希·施坦普费尔被任命为顾问
 
 

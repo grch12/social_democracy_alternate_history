@@ -202,7 +202,7 @@ view-if: president == "Schumacher"
 tags: endings
 go-to: eg_menu
 
-库尔特·舒马赫当选德国总统。作为一名年轻有为的社民党成员，他将在未来数年间领导德国。
+库尔特·舒马赫当选德国总统。作为一名年轻有为的社民党成员，他将在未来数年间为德国掌舵。
 
 @president_juchacz
 title: 玛丽·尤哈奇当选总统
@@ -414,7 +414,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if game_achievement_verfassungsreform: **宪法改革** - 通过一项宪法修正案。 ?]
 
-[? if game_achievement_zeppelin_kapitan : **飞艇艇长** - 雨果·埃克纳当选总统。 ?]
+[? if game_achievement_zeppelin_kapitan : **齐柏林艇长** - 雨果·埃克纳当选总统。 ?]
 
 [? if game_achievement_wahlrechts : **妇女选举权** - 玛丽·尤哈奇当选总统。 ?]
 
@@ -523,7 +523,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if achievement_verfassungsreform: **宪法改革** - 通过一项宪法修正案。 ?]
 
-[? if achievement_zeppelin_kapitan : **飞艇艇长** - 雨果·埃克纳当选总统。 ?]
+[? if achievement_zeppelin_kapitan : **齐柏林艇长** - 雨果·埃克纳当选总统。 ?]
 
 [? if achievement_wahlrechts : **妇女选举权** - 玛丽·尤哈奇当选总统。 ?]
 
@@ -630,7 +630,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if not achievement_verfassungsreform: **宪法改革** - 通过一项宪法修正案。 ?]
 
-[? if not achievement_zeppelin_kapitan : **飞艇艇长** - 雨果·埃克纳当选总统。 ?]
+[? if not achievement_zeppelin_kapitan : **齐柏林艇长** - 雨果·埃克纳当选总统。 ?]
 
 [? if not achievement_wahlrechts : **妇女选举权** - 玛丽·尤哈奇当选总统。 ?]
 

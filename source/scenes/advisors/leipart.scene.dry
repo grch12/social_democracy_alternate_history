@@ -18,7 +18,7 @@ new-page: true
 
 @organizing
 title: 组织工人
-subtitle: 提升我们在工人中的地位。.
+subtitle: 提升我们在工人中的地位。
 choose-if: advisor_action_timer <= 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?]
 on-arrival: advisor_action_timer = 6; workers_spd += 4*(1-dissent); workers_spd += 3*(1-dissent) if wtb_adopted == 1; labor_strength += 2;

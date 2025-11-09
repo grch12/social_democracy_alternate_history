@@ -7,7 +7,7 @@ new-page: true
 
 = 安娜·西姆森
 
-安娜·西姆森是教育改革倡导者和和平主义者，也是战前少数获得博士学位的德国女性之一。她曾是德国独立社会民主党（USPD）成员。
+安娜·西姆森是教育改革倡导者及和平主义者，也是战前少数获得博士学位的德国女性之一。她曾是德国独立社会民主党（USPD）成员。
 
 - @campaign_pacifism
 - @structure_
@@ -32,7 +32,7 @@ go-to: education_science.curriculum
 
 
 @structure_
-title: Change the structure and funding of education.
+title: 更改教育结构和资金
 choose-if: advisor_action_timer = 0 and spd_in_government and chancellor_party = "SPD" and spd_prussia
 unavailable-subtitle: [? if advisor_action_timer > 0 : 还需[+ advisor_action_timer +]个月才能执行下一个顾问行动。 ?][? if not spd_in_government : 社民党并未执政。 ?][? if chancellor_party != "SPD": 需要总理是社民党成员。 ?][? if not spd_prussia: 社民党必须掌握普鲁士州政府。 ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
