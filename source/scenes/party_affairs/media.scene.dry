@@ -55,7 +55,7 @@ Our new radio station allows us to connect to people in a more intimate setting 
 
 @radio_2
 title: We must keep on building up our radio network.
-subtitle: -1 resources
+subtitle: -1资源
 choose-if: resources >= 1
 unavailable-subtitle: 没有足够的资源。
 view-if: radio > 0 and radio <= 3
@@ -73,7 +73,7 @@ Our radio network has become a successful tool for spreading our message.
 
 @radio_4
 title: We should keep on supporting our radio network.
-subtitle: As radio becomes more common, the novelty is beginning to wear off, and radio is becoming saturated in society. -1 resources
+subtitle: As radio becomes more common, the novelty is beginning to wear off, and radio is becoming saturated in society. -1资源
 choose-if: resources >= 1
 unavailable-subtitle: 没有足够的资源。
 view-if: radio > 3 and (radio >= 6 or year >= 1932) and radio <= 9

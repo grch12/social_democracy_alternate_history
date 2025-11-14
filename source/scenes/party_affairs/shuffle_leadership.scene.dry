@@ -25,7 +25,7 @@ tags: center_advisor, left_advisor, reformist_advisor, labor_advisor, neorev_adv
 frequency: 1
 
 - #remove_advisor
-- @add_advisors: Add advisors
+- @add_advisors: 添加顾问
 
 @remove_none
 title: 停止更换顾问
@@ -339,7 +339,7 @@ view-if: hilferding_advisor = 0 and n_advisors < 3 and centrists_resign = 0
 on-arrival: hilferding_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
-鲁道夫·希法亭被任命为顾问
+鲁道夫·希法亭被任命为顾问。
 
 @add_wels
 title: 奥托·韦尔斯
@@ -351,7 +351,7 @@ view-if: wels_advisor = 0 and n_advisors < 3 and centrists_resign = 0
 on-arrival: wels_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
-奥托·韦尔斯被任命为顾问
+奥托·韦尔斯被任命为顾问。
 
 @add_muller
 title: 赫尔曼·米勒
@@ -363,7 +363,7 @@ view-if: muller_advisor = 0 and muller_dead = 0 and n_advisors < 3 and centrists
 on-arrival: muller_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
-赫尔曼·米勒被任命为顾问
+赫尔曼·米勒被任命为顾问。
 
 @add_breitscheid
 title: 鲁道夫·布赖特沙伊德
@@ -375,7 +375,7 @@ on-arrival: breitscheid_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 tags: center_advisor
 
-鲁道夫·布赖特沙伊德被任命为顾问
+鲁道夫·布赖特沙伊德被任命为顾问。
 
 # reformist
 
@@ -390,7 +390,7 @@ view-if: severing_advisor = 0 and n_advisors < 3
 on-arrival: severing_advisor = 1; n_advisors += 1; reformist_strength += 5
 go-to: advisor_menu
 
-卡尔·泽韦林被任命为顾问
+卡尔·泽韦林被任命为顾问。
 
 @add_braun
 title: 奥托·布劳恩
@@ -402,7 +402,7 @@ view-if: braun_advisor = 0 and n_advisors < 3
 on-arrival: braun_advisor = 1; n_advisors += 1; reformist_strength += 5
 go-to: advisor_menu
 
-奥托·布劳恩被任命为顾问
+奥托·布劳恩被任命为顾问。
 
 @add_juchacz
 title: 玛丽·尤哈奇
@@ -414,7 +414,7 @@ on-arrival: juchacz_advisor = 1; n_advisors += 1; reformist_strength += 5
 go-to: advisor_menu
 tags: reformist_advisor
 
-玛丽·尤哈奇被任命为顾问
+玛丽·尤哈奇被任命为顾问。
 
 @add_pfulf
 title: 安东尼·普菲尔夫
@@ -426,7 +426,7 @@ on-arrival: pfulf_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 tags: reformist_advisor
 
-安东尼·普菲尔夫被任命为顾问
+安东尼·普菲尔夫被任命为顾问。
 
 
 
@@ -442,7 +442,7 @@ on-arrival: levi_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
 
-保罗·列维被任命为顾问
+保罗·列维被任命为顾问。
 
 @add_sender
 title: 托妮·森德
@@ -454,7 +454,7 @@ on-arrival: sender_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
 
-托妮·森德被任命为顾问
+托妮·森德被任命为顾问。
 
 @add_rosenfeld
 title: 库尔特·罗森菲尔德
@@ -466,7 +466,7 @@ on-arrival: rosenfeld_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
 
-库尔特·罗森菲尔德被任命为顾问
+库尔特·罗森菲尔德被任命为顾问。
 
 @add_seydewitz
 title: 马克斯·赛德维茨
@@ -478,7 +478,7 @@ on-arrival: seydewitz_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
 
-马克斯·赛德维茨被任命为顾问
+马克斯·赛德维茨被任命为顾问。
 
 @add_siemsen
 title: 安娜·西姆森
@@ -490,7 +490,7 @@ on-arrival: siemsen_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
 
-安娜·西姆森被任命为顾问
+安娜·西姆森被任命为顾问。
 
 
 
@@ -506,7 +506,7 @@ view-if: leipart_advisor = 0 and n_advisors < 3 and unions_independent = 0
 on-arrival: leipart_advisor = 1; n_advisors += 1; labor_strength += 5
 go-to: advisor_menu
 
-西奥多·莱帕特被任命为顾问
+西奥多·莱帕特被任命为顾问。
 
 @add_aufhauser
 title: 齐格弗里德·奥夫豪泽
@@ -518,7 +518,7 @@ view-if: aufhauser_advisor = 0 and n_advisors < 3
 on-arrival: aufhauser_advisor = 1; n_advisors += 1; labor_strength += 5
 go-to: advisor_menu
 
-齐格弗里德·奥夫豪泽被任命为顾问
+齐格弗里德·奥夫豪泽被任命为顾问。
 
 @add_wissell
 title: 鲁道夫·维塞尔
@@ -530,7 +530,7 @@ view-if: wissell_advisor = 0 and n_advisors < 3 and unions_independent = 0
 on-arrival: wissell_advisor = 1; n_advisors += 1; labor_strength += 3
 go-to: advisor_menu
 
-鲁道夫·维塞尔被任命为顾问
+鲁道夫·维塞尔被任命为顾问。
 
 
 @add_woytinsky
@@ -543,7 +543,7 @@ view-if: woytinsky_advisor = 0 and n_advisors < 3 and unions_independent = 0
 on-arrival: woytinsky_advisor = 1; n_advisors += 1; labor_strength += 3
 go-to: advisor_menu
 
-弗拉基米尔·沃伊廷斯基被任命为顾问
+弗拉基米尔·沃伊廷斯基被任命为顾问。
 
 
 # neorevisionist leaders
@@ -558,7 +558,7 @@ on-arrival: mierendorff_advisor = 1; n_advisors += 1; neorevisionist_strength +=
 go-to: advisor_menu
 tags: neorev_advisor
 
-卡洛·米伦多夫被任命为顾问
+卡洛·米伦多夫被任命为顾问。
 
 @add_schumacher
 title: 库尔特·舒马赫
@@ -570,7 +570,7 @@ view-if: schumacher_advisor = 0 and n_advisors < 3
 on-arrival: schumacher_advisor = 1; n_advisors += 1; neorevisionist_strength += 5
 go-to: advisor_menu
 
-库尔特·舒马赫被任命为顾问
+库尔特·舒马赫被任命为顾问。
 
 @add_leber
 title: 尤利乌斯·莱贝尔
@@ -582,7 +582,7 @@ on-arrival: leber_advisor = 1; n_advisors += 1; neorevisionist_strength += 5
 go-to: advisor_menu
 tags: neorev_advisor
 
-尤利乌斯·莱贝尔被任命为顾问
+尤利乌斯·莱贝尔被任命为顾问。
 
 # Nonfactional advisors
 
@@ -596,7 +596,7 @@ on-arrival: baade_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 tags: nonfactional_advisor
 
-弗里茨·巴德被任命为顾问
+弗里茨·巴德被任命为顾问。
 
 
 @add_hirschfeld
@@ -609,7 +609,7 @@ on-arrival: hirschfeld_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 tags: nonfactional_advisor
 
-马格努斯·赫希菲尔德被任命为顾问
+马格努斯·赫希菲尔德被任命为顾问。
 
 # TODO: add radbruch, stampfer
 
@@ -623,7 +623,7 @@ on-arrival: radbruch_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 tags: nonfactional_advisor
 
-古斯塔夫·拉德布鲁赫被任命为顾问
+古斯塔夫·拉德布鲁赫被任命为顾问。
 
 
 @add_stampfer
@@ -636,6 +636,6 @@ on-arrival: stampfer_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 tags: nonfactional_advisor
 
-弗里德里希·施坦普费尔被任命为顾问
+弗里德里希·施坦普费尔被任命为顾问。
 
 

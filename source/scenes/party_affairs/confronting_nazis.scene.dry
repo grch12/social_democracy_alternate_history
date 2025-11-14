@@ -1,4 +1,4 @@
-title: Confronting the Nazis
+title: 直面纳粹
 new-page: true
 is-card: true
 view-if: (nsdap_r >= 10 and nazi_urgency > 1) and confronting_nazis_timer == 0 and iron_front_formed == 0
@@ -8,13 +8,13 @@ tags: party_affairs; antifascism
 
 # Forming the Iron Front
 
-The Nazis' strength is gaining, as shown by their recent election results and their violent presence in the streets. Their fascism threatens to plunge Germany once again into the abyss.
+纳粹势力正日益壮大，这从他们最近的选举结果和街头暴力行径中可见一斑。其法西斯主义正威胁着将德国再度推入深渊。
 
-Many in our party are calling for urgent action. The "neorevisionist" faction, led by young socialists like Carlo Mierendorff and Julius Leber, have formed specifically around this cause. But many in all factions of the party are calling for action.
+我们党内许多人正呼吁采取紧急行动。以卡洛·米伦多夫和尤利乌斯·莱贝尔等年轻社会主义者为首的“新修正主义”派系，正是围绕这一目标组建的。但党内各派系中都有众多人士呼吁采取行动。
 
-- @not_a_big_deal: The Nazis' moment will pass. Let's not get too hasty.
+- @not_a_big_deal: 纳粹的日子会过去的。别太心急。
 - @economic_crisis
-- @major_crisis: We must do something to confront the Nazis.
+- @major_crisis: 我们必须采取行动来直面纳粹。
 - @iron_front
 
 
@@ -22,10 +22,10 @@ Many in our party are calling for urgent action. The "neorevisionist" faction, l
 on-arrival: nazi_urgency -= 1; left_dissent += 5; neorevisionist_dissent += 15
 view-if: mierendorff_advisor = 0 and leber_advisor = 0 and schumacher_advisor = 0
 
-The Nazis are just another far-right movement that will die of its own contradictions sooner or later; we do not need to build a specific policy to combat them.
+纳粹只不过是又一场极右翼运动，就像之前那些一样，早晚会因其内部矛盾而破产；我们不需要制定专门的政策来应对他们。
 
 @economic_crisis
-title: We must address the economic crisis first.
+title: 我们必须先应对经济危机。
 view-if: economic_plan == 0 and black_thursday_seen == 1
 go-to: crisis_program
 
@@ -33,24 +33,24 @@ go-to: crisis_program
 view-if: nazi_urgency < 5
 on-arrival: nazi_urgency += 1; neorevisionist_dissent -= 5; neorevisionist_strength += 5
 
-The Nazis are one of the foremost threats to the German republic. However, we are still formulating a strategy to confront them, and still trying to build up consensus within our party for action. Check back on this later.
+纳粹是对德意志共和国最紧要的威胁。然而，我们仍在制定应对他们的战术，且仍然在努力在党内建立行动共识。稍后再来查看此处。
 
 @iron_front
-title: Form the Iron Front!
-subtitle: The Iron Front consists of the SPD, the trade unions, and the Reichsbanner.
+title: 组建钢铁阵线！
+subtitle: 钢铁阵线由社民党、产业工会和国旗团组成。
 view-if: nazi_urgency >= 3 and iron_front_formed == 0
 on-arrival: iron_front_formed = 1; radicalization += 1; nazi_urgency += 1; workers_spd += 5*(1-dissent); pro_republic += 5*(1-dissent); left_dissent -= 8; neorevisionist_dissent -= 10; neorevisionist_strength += 5
 achievement: eiserne_front
 
-The Nazi threat can no longer be ignored. We must build a new organization to confront them - the Iron Front - consisting of the SPD, the ADGB trade union federation, and the *Reichsbanner Schwarz-Rot-Gold*. We have a new symbol - the Three Arrows, pointing down towards the left.
+我们不能再忽视纳粹的威胁了。我们必须建立一个新组织来对抗他们——钢铁阵线——由社民党、产业工会联合会ADGB以及黑红金国旗团组成。我们有了新的象征——三支箭，箭头指向左下方。
 
-What do the three arrows stand for?
+三支箭代表什么？
 
-- @unity: Unity, Activity, and Discipline.
-- @anti: Opposition to Fascism, Stalinism, and Monarchism.
-- @orgs: The SPD, ADGB, and Reichsbanner.
-- @wtb: Woytinsky, Tarnow, and Baade of the WTB-Plan
-- @all: All of the above.
+- @unity: 团结、活动和纪律。
+- @anti: 反对法西斯主义、斯大林主义、保皇主义。
+- @orgs: 社民党、ADGB和国旗团
+- @wtb: WTB计划的沃伊廷斯基、塔诺和巴德。
+- @all: 以上全部
 
 @unity
 go-to: if_end
@@ -70,4 +70,4 @@ go-to: if_end
 
 @if_end
 
-The Iron Front has given a new energy to our party.
+钢铁阵线为我们党注入了新的活力。
