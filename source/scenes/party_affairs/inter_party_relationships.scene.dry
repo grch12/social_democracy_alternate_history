@@ -1,4 +1,4 @@
-title: Inter-Party Relationships
+title: 党际关系
 new-page: true
 view-if: year <= 1932 and inter_party_relationships_timer <= 0
 tags: party_affairs
@@ -8,9 +8,9 @@ card-image: img/weimar_coalition_2.jpg
 max-visits: 12
 #subtitle: Building relations with the other political parties of Germany.
 
-= Inter-Party Relationships
+= 党际关系
 
-The SPD cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties. Recently, our governments have consisted of the Weimar Coalition of the SPD, Center, and Democratic parties. We can reach out and build additional connections with these parties, or perhaps we can stand alone.
+社民党目前尚无法单独执政。由于我们未获得选举多数席位，需要其他政党的支持。近来，我们的政府由社民党、中央党及民主党组成的魏玛联盟构成。我们可以主动拓展与这些政党的联系，亦或维持独立存在。
 
 - @liberals: Strengthen our bonds with the left-liberal German Democratic Party and conservative-liberal German People's Party.
 - @center: Strengthen our bonds with the Catholic Center Party.
