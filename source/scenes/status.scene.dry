@@ -49,7 +49,7 @@ if (Q.economic_growth) {
 # 1928: 9, 1930: 5
 {!<span class="tooltip-text" title="德国人民党">DVP</span>!}: [+ dvp_r +]%
 # 1928: 14, 1930: 7
-{!<span class="tooltip-text" title="德国民族人民党">DNVP</span>!}: [+ dnvp_r +]%
+{!<span class="tooltip-text" title="德意志民族人民党">DNVP</span>!}: [+ dnvp_r +]%
 # 1928: 3, 1930: 18
 {!<span class="tooltip-text" title="民族社会主义德意志工人党（纳粹）">NSDAP</span>!}: [+ nsdap_r +]%
 # 1928: 9, 1930: 10
@@ -84,7 +84,7 @@ if (Q.economic_growth) {
 
 {!<span class="tooltip-text" title="德国共产党">KPD</span>!}: [+ kpd_relation : relationships +]
 
-{!<span class="tooltip-text" title="德国民族人民党">DNVP</span>!}: [+ dnvp_relation : relationships +]
+{!<span class="tooltip-text" title="德意志民族人民党">DNVP</span>!}: [+ dnvp_relation : relationships +]
 
 {!<span class="tooltip-text" title="民族社会主义德意志工人党（纳粹）">NSDAP</span>!}: [+ nsdap_relation : relationships +]
 
@@ -123,7 +123,7 @@ if (Q.sa_strength) {
 
 国旗团军事化程度：[+ rb_militancy : militancy +]
 
-{!<span class="tooltip-text" title="“红色阵线战士同盟”是与KPD有关联的共产主义组织。">RFB</span>!}成员：[+ rfb_strength_2 / 10 +]万
+{!<span class="tooltip-text" title="“红色前线战士同盟”是与KPD有关联的共产主义组织。">RFB</span>!}成员：[+ rfb_strength_2 / 10 +]万
 
 RFB军事化程度: [+ rfb_militancy : militancy +]
 

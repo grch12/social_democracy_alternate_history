@@ -219,7 +219,7 @@ go-to: menu
 
 当前关系：[+ dvp_relation : relationships +]
 
-**DNVP** - *Deutschnationale Volkspartei*（德国民族人民党）— 一个右翼民族主义保守政党，具有威权主义、保皇主义和种族主义倾向。该党获得旧贵族阶层、农村地主及保守路德教派信徒的支持。
+**DNVP** - *Deutschnationale Volkspartei*（德意志民族人民党）— 一个右翼民族主义保守政党，具有威权主义、保皇主义和种族主义倾向。该党获得旧贵族阶层、农村地主及保守路德教派信徒的支持。
 
 当前关系：[+ dnvp_relation : relationships +]
 
@@ -252,7 +252,7 @@ go-to: menu
 
 军事化程度：[+ rb_militancy : militancy +]
 
-**Rotfrontkämpferbund (RFB)**：“红色阵线战士同盟”与KPD相关联。
+**Rotfrontkämpferbund (RFB)**：“红色前线战士同盟”与KPD相关联。
 
 成员：[+ rfb_strength / 10 +]万
 

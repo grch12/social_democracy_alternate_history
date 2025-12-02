@@ -1,4 +1,4 @@
-title: International Relations
+title: 国际关系
 new-page: true
 is-card: true
 tags: party_affairs
@@ -8,14 +8,14 @@ card-image: img/international.jpg
 max-visits: 4
 #subtitle: Building ties with our fraternal socialist parties.
 
-At the Labor and Socialist International, we can forge contacts with our fraternal socialist parties in Europe and across the world.
+在社会主义工人国际，我们可以与欧洲和世界的社会主义兄弟政党建立联系。
 
-- @fr_uk: Build relationships with the French SFIO and British Labour Party to move their governments in Germany's favor.
-- @austria: Learn organization and street fighting from the Austrian SDAPÖ.
-- @scandi: Learn the path of economics and reform from the Scandinavian social democrats.
-- @comintern: Forget the second international - embed a spy in the Comintern's conference.
-- @america: Contact the Socialist party of America.
-- @return: We do not need international contacts at the moment.
+- @fr_uk: 与法国SFIO及英国工党建立关系，促使两国政府支持德国立场。
+- @austria: 向奥地利社会民主工党学习组织能力和街头斗争技巧。
+- @scandi: 向斯堪的纳维亚社会民主党人学习经济与改革之道。
+- @comintern: 忘掉第二国际吧 —— 在共产国际的大会中安插一个间谍。
+- @america: 联系美国社会党。
+- @return: 我们现在不需要国际联系。
 - @easy_discard
 - @cancel_advisor_action
 
@@ -25,18 +25,18 @@ choose-if: resources >= 1
 unavailable-subtitle: 没有足够的资源。
 on-arrival: resources -= 1; west_relation += 1; reformist_strength += 5; pacifism += 1; moderate_plan_support += 1
 
-The socialists of France and Britain can influence their governments to be friendlier towards Germany. Hopefully they will reduce our reparations burden.
+法国和英国的社会主义者能够影响本国政府对德国采取更友好的态度。希望他们能减轻我们的赔款负担。
 
 @austria
-subtitle: -1资源 [? if austrian_parliament_seen and not austrian_civil_war_seen: - We will also help the Austrians oppose their dictatorship. ?]
+subtitle: -1资源 [? if austrian_parliament_seen and not austrian_civil_war_seen: — 我们也会帮助奥地利人反对该国的独裁政权。 ?]
 choose-if: resources >= 1
 unavailable-subtitle: 没有足够的资源。
 audio: shuffle music/communist/workers_of_vienna_normalized.mp3
 on-arrival: left_strength += 5; radicalization += 1; rb_militancy += 0.03; resources -= 1; austria_relation += 1; sdapo_strength += 1 if austrian_parliament_seen = 1
 
-Our Reichsbanner can learn much in paramilitary organization and training from the Austrian Republikanischer Schutzbund (Republican Protection Units), the paramilitary branch of the Austrian social democrats.
+我们的国旗团可从奥地利社会民主工党下属的准军事组织——奥地利共和保卫联盟（Republikanischer Schutzbund）的准军事组织架构与训练体系中汲取诸多经验。
 
-[? if austrian_parliament_seen and not austrian_civil_war_seen: We are also helping the Austrian Social Democratic Worker's Party build up their resources in preparation for a future struggle, legally and illegally. ?]
+[? if austrian_parliament_seen and not austrian_civil_war_seen: 我们还协助奥地利社会民主工党筹集资源，为未来合法或非法的斗争做准备。 ?]
 
 
 @scandi
@@ -45,7 +45,7 @@ choose-if: resources >= 1
 unavailable-subtitle: 没有足够的资源。
 on-arrival: reformist_strength += 8; wtb_support += 1; resources -= 1; moderate_plan_support += 1
 
-The programs of the Nordic socialists involve active government intervention in the economy. We can learn from their economic strategies, and how they moved beyond their working-class base to attract a broader set of constituents.
+北欧社会主义者的纲领主张政府积极干预经济。我们可以借鉴他们的经济策略，以及他们如何突破工人阶级基础，吸引更广泛选民群体。
 
 @comintern
 subtitle: -1资源
@@ -53,7 +53,7 @@ choose-if: resources >= 1
 unavailable-subtitle: 没有足够的资源。
 on-arrival: resources -= 1; kpd_relation += 5*(1-dissent); communist_coalition += 1 if comintern_seen == 0; comintern_seen += 1
 
-The Stalinists of the KPD insists on calling us "social fascists", suggesting that we social democrats are as bad or worse than actual fascists. Needless to say, this is not good for our relationship with the Communists. By observing the Comintern, we can better understand the KPD, enabling us to potentially improve relations, or counter the KPD if it may come to that.
+KPD内的斯大林主义者执意称我们为“社会法西斯主义者”，暗示我们社会民主党人与真正的法西斯分子同样恶劣甚至更甚。毋庸赘言，这不利于我们与共产党的关系。通过观察共产国际，我们能更深入地理解KPD，从而有望改善关系，或在必要时予以反击。
 
 @america
 subtitle: -1资源
@@ -61,8 +61,8 @@ choose-if: resources >= 1
 unavailable-subtitle: 没有足够的资源。
 on-arrival: resources -= 1
 
-The Socialist Party of America is tiny and has limited support. There is not much we can do for them, and conversely, not much they can do for us.
+美国社会党规模微小，支持者寥寥。我们能为他们做的事不多，反之亦然。
 
 @reduce
 
-We do not need the international contacts at the moment.
+我们现在不需要国际联系。

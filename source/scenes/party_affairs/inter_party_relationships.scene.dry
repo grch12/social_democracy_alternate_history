@@ -12,10 +12,10 @@ max-visits: 12
 
 社民党目前尚无法单独执政。由于我们未获得选举多数席位，需要其他政党的支持。近来，我们的政府由社民党、中央党及民主党组成的魏玛联盟构成。我们可以主动拓展与这些政党的联系，亦或维持独立存在。
 
-- @liberals: Strengthen our bonds with the left-liberal German Democratic Party and conservative-liberal German People's Party.
-- @center: Strengthen our bonds with the Catholic Center Party.
-- @kpd: Work towards repairing relationships with the Communist Party.
-- @spd_alone: The SPD can stand alone for now.
+- @liberals: 加强我们与左翼自由主义的德国民主党及保守自由主义的德国人民党的联系。
+- @center: 加强我们与天主教中央党的联系。
+- @kpd: 努力修复我们与共产党的关系。
+- @spd_alone: 社民党现在可以独立存在。
 - @easy_discard
 
 
@@ -29,13 +29,13 @@ go-to: kpd_blutmai if blutmai = 1; kpd_1 if blutmai = 0 and kpd_coalition_succes
 @kpd_1
 on-arrival: kpd_relation += 6*(1 - dissent); communist_coalition += 1 if kpd_inter_party_seen <= 1; reformist_dissent += 2; z_relation -= 2; dvp_relation -= 3
 
-The communists are suspicious of our overtures, especially the Stalinist leadership, who persist in calling us "social fascists". However, connections are made at the grassroots and local levels.
+共产党人对我们的示好持怀疑态度，尤其是斯大林主义领导层，他们坚持称我们为“社会法西斯主义者”。然而，基层和地方层面仍建立了联系。
 
 @kpd_rectification_of_history
 
-One stumbling block for our relations with the KPD is our history of conflict, dating back to 1918 and 1919. The KPD is especially contemptuous of Gustav Noske, the SPD "bloodhound" who reportedly ordered the violent suppression of the Spartacist uprising and other KPD revolts. They also blame us for the deaths of Rosa Luxemburg and Karl Liebknecht, two SPD-turned-KPD leaders who were killed during the suppression of the uprising.
+我们与德国共产党关系的一个绊脚石，是可追溯至1918年和1919年的历史冲突。德国共产党尤其鄙视古斯塔夫·诺斯克——这位社民党的“血猎犬”据称曾下令暴力镇压斯巴达克起义及其他德国共产党叛乱。他们还指责我们导致了罗莎·卢森堡和卡尔·李卜克内西的死亡——这两位从社民党转投德共的领袖在镇压起义期间遇害。
 
-For further improvements in KPD relations, it might be necessary to expel Noske, and hold some sort of commemoration for Luxemburg and Liebknecht.
+为进一步改善与德共的关系，或许有必要开除诺斯克的党籍，并为卢森堡和李卜克内西举行某种形式的纪念活动。
 
 - @yes_history: Yes, we must apologize for our past actions.
 - @no_history: No, we have no need to apologize.
@@ -43,25 +43,25 @@ For further improvements in KPD relations, it might be necessary to expel Noske,
 @yes_history
 on-arrival: reformist_dissent += 12; reformist_strength -= 2; neorevisionist_dissent += 5; left_dissent -= 6; left_strength += 5; kpd_rectified_history = 1; z_relation -= 6; dvp_relation -= 6; ddp_relation -= 4; kpd_relation += 8*(1-dissent); coalition_dissent += 1
 
-As part of normalizing relations with the KPD, we have to acknowledge the wrongdoings of our past. We have expelled Noske, and have held public commemorations for those killed by troops during the uprisings.
+为实现与德国共产党关系正常化，我们必须承认过去的错误。我们已将诺斯克开除出党，并为起义期间遭军队杀害的民众举行了公开悼念活动。
 
-This leads to tensions with the moderates and reformists within our party, and criticism from the conservative and liberal parties.
+此举引发了党内温和派与改革派的紧张关系，同时也招致保守派和自由派政党的批评。
 
 @no_history
 on-arrival: kpd_relation -= 3
 
-We have no need to apologize for the actions of Ebert and Noske; it is the Communists' fault for launching a violent insurrection.
+我们无需为艾伯特和诺斯克的行为道歉；发动暴力叛乱是共产党人的过错。
 
 
 @kpd_2
 on-arrival: kpd_relation += 8*(1 - dissent); communist_coalition += 1 if kpd_inter_party_seen <= 1; reformist_dissent += 2; z_relation -= 3; dvp_relation -= 3
 
-After the success of the coalition government with the KPD, they are much more amenable to us.
+在成功与KPD组建联合政府后，他们与我们更好相处了。
 
 @kpd_blutmai
 on-arrival: kpd_relation += 3*(1 - dissent); reformist_dissent += 1
 
-After the events of Blütmai, reconciling with the Communists is difficult, if not impossible. Nevertheless, we must try.
+在“血腥五月”事件之后，与共产党和解就算不说是不可能，也是困难得多了。无论如何，我们必须试试。
 
 @center
 subtitle: -1资源
@@ -73,17 +73,17 @@ go-to: center_op if z_in_government = 1 and spd_in_government = 0 and chancellor
 @center_op
 on-arrival: z_relation += 5*(1 - dissent)
 
-We are currently in opposition to the Center-led government, but that does not preclude the general building of feelings of good will.
+我们当前正在反对中央党领导的政府，但这并不妨碍建立普遍的善意。
 
 @center_coalition
 on-arrival: z_relation += 8*(1 - dissent)
 
-We are currently coalition partners with them, so improving relations comes naturally.
+我们当前与他们是联盟伙伴，所以改善关系是很自然的。
 
 @center_bruning
 on-arrival: z_relation += 5*(1 - dissent)
 
-The Brüning semi-autocratic regime makes building friendly relations difficult, but not impossible.
+布吕宁的半专制政权使建立友好关系变得困难，但并非不可能。
 
 @liberals
 subtitle: -1资源
@@ -92,29 +92,29 @@ unavailable-subtitle: 没有足够的资源。
 on-arrival: resources -= 1; ddp_relation += 5*(1 - dissent)
 go-to: dvp_stresemann if stresemann_dead = 0; dvp_loss if stresemann_dead = 1 and year <= 1930; dvp_moribound if year > 1930
 
-The [+ ddp_name +] has been one of our closest allies through the course of the Republic.
+在共和国的整个历程中，[+ ddp_name +]一直是我们最紧密的盟友之一。
 
 @dvp_stresemann
 on-arrival: dvp_relation += 8*(1 - dissent)
 
-Gustav Stresemann, the leader of the DVP is the best foreign policy leaders of the republic, and while he has previously expressed monarchist tendencies, he has been friendly towards us.
+人民党领袖古斯塔夫·施特雷泽曼是共和国最杰出的外交政策领袖，尽管他曾表现出保皇主义倾向，但始终对我们持友好态度。
 
 @dvp_loss
 on-arrival: dvp_relation += 5*(1 - dissent)
 
-With the death of Gustav Stresemann, the DVP is much less likely to be accommodating of us. In addition, the liberal parties are electorally in decline, so perhaps our efforts are best spent elsewhere.
+随着古斯塔夫·施特雷泽曼的去世，DVP对我们的包容度大幅降低。此外，自由派政党在选举中节节败退，或许我们应将影响力转向其他地方。
 
-However, given the influence of the DVP among the other right-leaning parties [? if president == "Hindenburg": and with President Hindenburg ?], it can still be helpful to influence them.
+然而，鉴于DVP对其他右翼政党[? if president == "Hindenburg": 以及兴登堡总统?]的影响力，对其施加影响仍可能有所助益。
 
 @dvp_moribound
 on-arrival: dvp_relation += 5*(1 - dissent)
 
-The liberal parties (both the [+ ddp_name +] and DVP) are electorally moribund, so perhaps our efforts are best spent elsewhere.
+自由派政党（无论是[+ ddp_name +]还是DVP）在选举中已奄奄一息，因此或许我们最好将影响力转向其他地方。
 
-However, given the influence of the DVP among the other right-leaning parties[? if president == "Hindenburg": and with President Hindenburg ?], it can still be helpful to influence them.
+然而，鉴于DVP对其他右翼政党[? if president == "Hindenburg": 以及兴登堡总统?]的影响力，对其施加影响仍可能有所助益。
 
 @spd_alone
 
-Whether it is because we *cannot* or *will not*, we do not make ties with other parties at this moment.
+不管是 *不能* 还是 *不愿* ，我们现在不会与其他政党建立联系。
 
-- @return: Continue...
+- @return: 继续…

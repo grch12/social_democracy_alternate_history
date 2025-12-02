@@ -1,4 +1,4 @@
-title: The Iron Front
+title: 钢铁阵线
 new-page: true
 is-card: true
 view-if: iron_front_formed == 1 and iron_front_timer = 0
@@ -7,38 +7,38 @@ card-image: img/iron_front.png
 frequency: 200
 tags: party_affairs, antifascism
 
-= The Iron Front
+= 钢铁阵线
 
-The Iron Front is our new antifascist coordination front, consisting of the SPD, the trade unions, and the Reichsbanner. How should we use the Iron Front?
+钢铁阵线是我们新的反法西斯协作阵线，由社民党、产业工会以及国旗团组成。我们应该如何利用钢铁阵线？
 
 [? if workers_spd < 45 or workers_spd < workers_nsdap or workers_spd < workers_kpd : Unfortunately, the Iron Front's effectiveness is dragged down by the SPD's unpopularity, as the SPD is no longer the dominant party among the workers. Many Reichsbanner members have left, and many workers are not interested. ?]
 
-- @defense: Rally for defense against the fascists with the Reichsbanner.
-- @pacifism: Rally for pacifism, against nationalism and war.
-- @republic: Rally to save the democratic republic against dictatorship.
-- @wtb: Rally for economic change and the WTB-Plan.
+- @defense: 与国旗团一起，抵御法西斯主义者的集会。
+- @pacifism: 反对民族主义和战争，支持和平主义的集会
+- @republic: 拯救民主共和国、反对独裁的集会。
+- @wtb: 支持经济变革和WTB计划的集会。
 - @antisemitism
 - @easy_discard
 
 @defense
-subtitle: -[+ rb_militarization_cost +] resources
+subtitle: -[+ rb_militarization_cost +]资源
 choose-if: resources >= rb_militarization_cost
 on-arrival: resources -= rb_militarization_cost; rb_strength += 50; rb_militancy += 0.05; z_relation -= 5 if historical_mode
 
-The Iron Front rallies for the militant defense of the republic against the fascist paramilitaries, strengthening the Reichsbanner.
+钢铁阵线组织号召武装保卫共和国对抗法西斯准军事组织，从而强化国旗团的力量。
 
-[? if historical_mode : The Center Party decries the militarization of the Reichsbanner and Iron Front, and its members are leaving the republican organization. ?]
+[? if historical_mode :中央党谴责国旗团与钢铁阵线的军事化倾向，其成员正陆续退出该组织。 ?]
 
 
 @pacifism
 on-arrival: pacifism += 1; nationalism -= 5 if pacifism >= 3; workers_spd += 5*(1-dissent) if pacifism >= 4; unemployed_spd += 4*(1-dissent) if pacifism >= 4; new_middle_spd += 4*(1-dissent) if pacifism >= 4
 
-The Iron Front rallies against nationalism and war.
+钢铁阵线团结起来反对民族主义和战争。
 
 @republic
 on-arrival: pro_republic += 5*(1-dissent); democratization += 1; workers_spd += 5*(1-dissent) if democratization >= 4; unemployed_spd += 4*(1-dissent) if democratization >= 4; new_middle_spd += 4*(1-dissent) if democratization >= 4
 
-The Iron Front rallies in defense of the democratic republic and against dictatorship.
+钢铁阵线团结起来号召保卫民主共和国、反对独裁。
 
 @wtb
 choose-if: return_to_normalcy = 0
@@ -46,12 +46,12 @@ unavailable-subtitle: The economic crisis is largely over now, and the public is
 view-if: wtb_adopted == 1
 on-arrival: workers_spd += 8*(1-dissent); unemployed_spd += 8*(1-dissent); new_middle_spd += 5*(1-dissent); old_middle_spd += 3*(1-dissent); rural_spd += 3*(1-dissent);
 
-The WTB-Plan is the rallying point for the entire SPD and its affiliated organizations, including the Iron Front.
+WTB计划是整个社民党及其附属组织（包括钢铁阵线）的宣传论点。
 
 @antisemitism
-title: Rally against antisemitism and in defense of Jewish Germans.
+title: 反对反犹主义、保护德国犹太人的集会。
 view-if: confronting_antisemitism > 1
 on-arrival: nationalism -= 4*(1-dissent); pro_republic += 3*(1-dissent); confronting_antisemitism += 1; workers_nsdap -= 4*(1-dissent); unemployed_nsdap -= 4*(1-dissent);
 
 # TODO
-The Nazis and other far-right political movements are increasingly turning their hatred against the Jewish community of Germany. The Iron Front rallies in defense of individual Jews and the broader community against violence.
+纳粹分子及其他极右翼政治运动正日益将仇恨转向德国犹太社群。钢铁阵线发起集会，旨在保护个体犹太人及整个社群免受暴力侵害。
