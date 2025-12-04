@@ -53,7 +53,7 @@ on-arrival: wtb_adopted = 1; labor_dissent -= 15; reformist_dissent -= 10; labor
 通过我们的努力，我们终于说服了党内大多数人采纳WTB计划！[? if spd_in_government == 1 : 只要我们掌握了经济部或财政部，就可以立刻开始实施该计划。?][? if spd_in_government = 0 : 我们应该在选举宣传中重点强调该计划。?]
 
 @support_left
-subtitle: Call for mass nationalizations and the transformation of the economy.
+subtitle: 呼吁大规模国有化和经济转型
 unavailable-subtitle: 左派不够强大。
 choose-if: historical_mode == 0 or (left_strength >= labor_strength and left_strength >= center_strength and left_strength >= reformist_strength)
 on-arrival: left_strength += 10; reformist_dissent += 5; labor_dissent += 5; nationalization_support += 2
