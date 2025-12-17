@@ -13,38 +13,38 @@ title: Campaigning (People's Party)
 title: Campaign among the workers, to assuage their doubts about our changes.
 on-arrival: workers_spd += 5*(1-dissent);
 
-The workers are still a key part of our constituency, and we must not alienate them in the transformation of our party.
+工人仍然是我们支持者中的关键部分，在我们党的转型中不能疏远他们。
 
 @campaign_middle
 title: Campaign among the middle classes.
 on-arrival: old_middle_spd += 5*(1-dissent); new_middle_spd += 5*(1-dissent)
 
-As a people's party, we represent the employees and small businesspeople of the middle class, and they are becoming receptive to our messages.
+作为全民党，我们代表中产阶层的职员和小商人，并且他们变得更乐于接受我们的信息了。
 
 @campaign_rural
-title: Campaign in rural areas.
+title: 在农村地区开展竞选活动。
 choose-if: rural_policy > 0
-unavailable-subtitle: We have not enacted any rural policies yet.
+unavailable-subtitle: 我们还没有制定过农业政策。
 on-arrival: rural_spd += 6*(1-dissent)
 
-As a people's party, we represent farmers and rural workers as well, and they are becoming receptive to our messages.
+作为全民党，我们同样代表农场主及农民，并且他们变得更乐于接受我们的信息了。
 
 @campaign_unemployed
 title: Campaign among the unemployed.
 on-arrival: unemployed_spd += 5*(1-dissent);
 
-As a people's party, the urban poor are still a key part of our constituency.
+作为全民党，城市贫民仍然是我们支持者中的关键部分
 
 @campaign_women
 title: Campaign among women of all classes.
 on-arrival: workers_spd += 3*(1-dissent); new_middle_spd += 3*(1-dissent); old_middle_spd += 3*(1-dissent); rural_spd += 3*(1-dissent); unemployed_spd += 3*(1-dissent);
 
-As a people's party, we represent women of all classes.
+作为全民党，我们代表所有阶层的妇女。
 
 @campaign_catholics
 title: Campaign among political Catholics.
 on-arrival: catholics_spd += 5*(1-dissent);
 
-Catholics have historically been tied to the Center Party, but there is no reason why our party cannot appeal to them. The Prussian Concordat in particular is a sign of our friendship with Catholicism.
+天主教徒历来与中央党关系密切，但我们的政党同样能赢得他们的支持。特别是《普鲁士协约》，正是我们与天主教友好的明证。
 
 
