@@ -22,45 +22,45 @@ max-visits: 3
 
 @class_struggle
 on-arrival: {!
-if (Q.ideology && Q.ideology != "left") {
+if (Q.ideology && Q.ideology != "左派") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "left"; left_strength += 10; communist_coalition += 1; left_dissent -= 5; z_relation -= 3; dvp_relation -= 5; nationalization_support += 1; kpd_relation += 3
+on-departure: ideology = "左派"; left_strength += 10; communist_coalition += 1; left_dissent -= 5; z_relation -= 3; dvp_relation -= 5; nationalization_support += 1; kpd_relation += 3
 
 党的激进左翼支持阶级斗争路线，以及尝试与共产党和解。
 
 @centrist
 on-arrival: {!
-if (Q.ideology && Q.ideology != "centrist") {
+if (Q.ideology && Q.ideology != "中间派") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "centrist"; center_strength += 10; center_dissent -= 10; left_dissent -= 5; reformist_dissent -= 5
+on-departure: ideology = "中间派"; center_strength += 10; center_dissent -= 10; left_dissent -= 5; reformist_dissent -= 5
 
 以考茨基和希法亭为代表的中间派马克思主义者主张采取中间路线，即在提高工人阶级觉悟的同时为革命做准备。
 
 @labor
 on-arrival: {!
-if (Q.ideology && Q.ideology != "labor") {
+if (Q.ideology && Q.ideology != "劳工派") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "labor"; labor_strength += 10; wtb_support += 1; labor_dissent -= 5; kpd_relation -= 3
+on-departure: ideology = "劳工派"; labor_strength += 10; wtb_support += 1; labor_dissent -= 5; kpd_relation -= 3
 
 党内的劳工派支持继续参与政府事务，以保障工人权益，并主张创建公共工程计划以促进就业。
 
 @reform
 on-arrival: {!
-if (Q.ideology && Q.ideology != "reformist") {
+if (Q.ideology && Q.ideology != "改革派") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "reformist"; reformist_strength += 10; democratization += 1; reformist_dissent -= 5; z_relation += 5; dvp_relation += 5; kpd_relation -= 8; moderate_plan_support += 1
+on-departure: ideology = "改革派"; reformist_strength += 10; democratization += 1; reformist_dissent -= 5; z_relation += 5; dvp_relation += 5; kpd_relation -= 8; moderate_plan_support += 1
 
 党内的改革派力图维护共和国和民主政体，最支持与其他亲民主政党结成联盟。
 

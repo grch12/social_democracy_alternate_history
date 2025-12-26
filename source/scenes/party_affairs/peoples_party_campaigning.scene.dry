@@ -33,7 +33,7 @@ on-arrival: rural_spd += 6*(1-dissent)
 title: Campaign among the unemployed.
 on-arrival: unemployed_spd += 5*(1-dissent);
 
-作为全民党，城市贫民仍然是我们支持者中的关键部分
+作为全民党，城市贫民仍然是我们支持者中的关键部分。
 
 @campaign_women
 title: Campaign among women of all classes.
@@ -45,6 +45,6 @@ on-arrival: workers_spd += 3*(1-dissent); new_middle_spd += 3*(1-dissent); old_m
 title: Campaign among political Catholics.
 on-arrival: catholics_spd += 5*(1-dissent);
 
-天主教徒历来与中央党关系密切，但我们的政党同样能赢得他们的支持。特别是《普鲁士协约》，正是我们与天主教友好的明证。
+天主教徒历来与中央党关系密切，但我们党同样能赢得他们的支持。特别是《普鲁士教务专约》，正是我们与天主教友好的明证。
 
 

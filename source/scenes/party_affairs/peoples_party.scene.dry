@@ -10,15 +10,15 @@ max-visits: 4
 
 = 建立全民党
 
-Contrary to orthodox Marxist predictions, the industrial proletariat is not constantly increasing in size. The rapid growth of the "new middle class" of white-collar workers and the persistence of small farmers and the peasantry confound predictions of a working-class majority.
+与正统马克思主义的预测相反，工业无产阶级的规模并未持续扩大。白领阶层构成的“新中产阶层”迅速增长，加之小农场主与自耕农阶层的顽强存在，使工人阶级成为多数的预言难以实现。
 
-In order to build a socialist majority, many reformists and neorevisionists are calling for our party to move beyond the urban working class, to embrace the concerns of the middle class, farmers, and women of all classes. We can create a new and inclusive vision of the party that encompasses all people who work for a living, which is almost everyone in the country save the aristocrats and top capitalists.
+为建立社会主义多数派，许多改良派和新修正主义者呼吁本党超越城市工人阶级，关注中产阶层、农民及各阶层妇女的诉求。我们能够开创一个包容性的政党新愿景，涵盖所有靠劳动谋生的人——这几乎包括除贵族和顶级资本家之外的全体国民。
 
-- @support_peoples_party: Yes, we must become a people's party!
-- @build_support: We must build additional support before becoming a people's party.
-- @support_peoples_party_hard: Despite strong opposition from the Center and Left factions, we will become a people's party.
-- @no_new_ideas: No, we will always be a party of the working class.
-- @root: Perhaps we can discuss this at a later time.
+- @support_peoples_party: 是的，我们必须成为全民党！
+- @build_support: 在成为全民党之前，我们应争取更多支持。
+- @support_peoples_party_hard: 尽管左派和中间派强烈反对，我们还是要成为全民党。
+- @no_new_ideas: 不，我们将永远是工人阶级的党。
+- @root: 我们可以稍后再讨论这个问题。
 - @easy_discard
 - @cancel_advisor_action
 
@@ -35,7 +35,7 @@ unavailable-subtitle: The opposition is too strong.
 on-arrival: neorevisionist_strength += 15; reformist_strength += 15; neorevisionist_dissent -= 10; reformist_dissent -= 10; peoples_party = 1; workers_spd -= 12; rural_spd += 10; new_middle_spd += 10; old_middle_spd += 8; catholics_spd += 8; left_dissent += 25; center_dissent += 20; kpd_relation -= 10; kpd_coalition_dissent += 1; coalition_dissent -= 1; z_relation += 5*(1-dissent); dvp_relation += 5*(1-dissent)
 achievement: volkspartei
 
-In an emergency conference, we have decided to become a people's party that encompasses all of the regular people of Germany, not just the workers and urban poor. The Left and Center claim that our new party platform is a betrayal of our founding principles, a turn away from Marxism towards bourgeois opportunism. Whatever the case, we are now a party representing all of the people, not just the proletariat.
+In an 非常党代会, we have decided to become a people's party that encompasses all of the regular people of Germany, not just the workers and urban poor. The Left and Center claim that our new party platform is a betrayal of our founding principles, a turn away from Marxism towards bourgeois opportunism. Whatever the case, we are now a party representing all of the people, not just the proletariat.
 
 Should we run a new campaign to publicize our new platform?
 
@@ -68,13 +68,13 @@ Should we run a new campaign to publicize our new platform?
 title: Campaign among the workers, to assuage their doubts about our changes.
 on-arrival: workers_spd += 6*(1-dissent);
 
-The workers are still a key part of our constituency, and we must not alienate them in the transformation of our party.
+工人仍然是我们支持者中的关键部分，在我们党的转型中不能疏远他们。
 
 @campaign_middle
 title: Campaign among the middle classes.
 on-arrival: old_middle_spd += 5*(1-dissent); new_middle_spd += 6*(1-dissent)
 
-As a people's party, we represent the employees and small businesspeople of the middle class, and they are becoming receptive to our messages.
+作为全民党，我们代表中产阶层的职员和小商人，并且他们变得更乐于接受我们的信息了。
 
 @campaign_rural
 title: Campaign in rural areas.
@@ -82,29 +82,29 @@ choose-if: rural_policy > 0
 unavailable-subtitle: We have not enacted any rural policies yet.
 on-arrival: rural_spd += 7*(1-dissent)
 
-As a people's party, we represent farmers and rural workers as well, and they are becoming receptive to our messages.
+作为全民党，我们同样代表农场主及农民，并且他们变得更乐于接受我们的信息了。
 
 @campaign_unemployed
 title: Campaign among the unemployed.
 on-arrival: unemployed_spd += 6*(1-dissent);
 
-As a people's party, the urban poor are still a key part of our constituency.
+作为全民党，城市贫民仍然是我们支持者中的关键部分。
 
 @campaign_women
 title: Campaign among women of all classes.
 on-arrival: workers_spd += 3*(1-dissent); new_middle_spd += 3*(1-dissent); old_middle_spd += 3*(1-dissent); rural_spd += 3*(1-dissent); unemployed_spd += 3*(1-dissent);
 
-As a people's party, we represent women of all classes.
+作为全民党，我们代表所有阶层的妇女。
 
 @campaign_catholics
 title: Campaign among political Catholics.
 on-arrival: catholics_spd += 7*(1-dissent);
 
-Catholics have historically been tied to the Center Party, but there is no reason why our party cannot appeal to them. The Prussian Concordat in particular is a sign of our friendship with Catholicism.
+天主教徒历来与中央党关系密切，但我们党同样能赢得他们的支持。特别是《普鲁士教务专约》，正是我们与天主教友好的明证。
 
 
 @no_new_ideas
 on-arrival: neorevisionist_strength -= 6; neorevisionist_dissent += 5; center_strength += 8; left_strength += 3; peoples_party = 0; peoples_party_support -= 3
 
-The Social Democrats have been and will always be a party of the working class.
+社民党一直是，也将永远是工人阶级的党。
 
